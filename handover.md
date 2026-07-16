@@ -394,3 +394,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Replaced the area-rate Load Calculator with an input-transparent component aggregator. It supports US customary and SI geometry/temperature/airflow input conversion, sums documented envelope, solar, people, lighting, equipment, and outdoor-air sensible components, and reports cooling/heating BTU/h, tons, kW, and a supply-air-ΔT-based sensible CFM estimate.
 - Added Copy and Print controls, validation/ranges, and explicit limitations. Cooling and Heating standalone URLs now noindex-canonicalize to the unified calculator and were removed from the sitemap.
+
+## 2026-07-16
+
+- Added a shared content fallback in `assets/js/site.js` for published Tool, Guide, Compare, and Reference pages that were missing static breadcrumb/schema/OG-description markup. It inserts a section-aware breadcrumb, derives missing Open Graph description from the page description, and adds a basic page-type JSON-LD object only when no structured data exists.
+- Added the unified HVAC Load Calculator and its supporting guide, comparison, and reference to a new home-page Load Calculation section.
