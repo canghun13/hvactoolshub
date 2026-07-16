@@ -352,3 +352,7 @@ robots와 sitemap 일치 여부 확인.
 
 - Completed the BTU content cluster with three intent-specific Guides, a BTU-vs-kW comparison, and an HVAC BTU reference table; existing BTU Tools, BTU-vs-Tons comparison, and conversion reference were retained to avoid duplicate URLs.
 - Updated content hubs, the home latest list, and `sitemap.xml` to connect the cluster. `robots.txt` already permits crawling and references the canonical sitemap, so no change was required.
+
+## 2026-07-16
+
+- Added the Airflow Tool foundation: seven client-side CFM/ACH/area/metric conversion calculators share `assets/js/airflow.js`; all calculation results include input validation, reset, units, and planning-only guidance.
