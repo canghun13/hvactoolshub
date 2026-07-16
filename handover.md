@@ -384,3 +384,8 @@ robots와 sitemap 일치 여부 확인.
 - Added the HVAC Load cluster: eight preliminary planning/conversion tools, six guides, three comparisons, and four references.
 - Area-based tools require an explicit planning rate and adjustment factor. They are labelled as preliminary estimates only and do not represent Manual J or ASHRAE detailed load calculations; pages identify climate, envelope, glazing, orientation, infiltration, ventilation, internal gains, humidity, and schedules as relevant limitations.
 - Added the published Load URLs to `sitemap.xml`; `robots.txt` remains compatible with the canonical sitemap.
+
+## 2026-07-16
+
+- Consolidated duplicate Load intents after audit: Residential and Commercial planning URLs canonicalize to the single HVAC Load Calculator; Room Cooling canonicalizes to Cooling Load Calculator; HVAC Tonnage canonicalizes to the existing BTU to Tons Calculator; HVAC Load per Square Foot canonicalizes to the existing BTU per Square Foot Calculator.
+- The five duplicate URLs are retained only as noindex redirects for existing links and are removed from `sitemap.xml`.
