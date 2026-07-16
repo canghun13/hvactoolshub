@@ -413,3 +413,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Corrected hub-discovery omissions: Guides, Compare, and Reference hubs now surface the maintained Load content alongside BTU, Airflow, and Duct content. Reference intentionally links the maintained Load Guide instead of the four consolidated noindex Reference URLs.
+
+## 2026-07-16
+
+- Began site-wide Tool UX reinforcement: shared `tool-polish.js` now adds Copy result and Print actions to published calculator forms without duplicating buttons, while the rebuilt shared loader retains header/footer, responsive directory styling, breadcrumb fallback, and metadata fallback behavior.
