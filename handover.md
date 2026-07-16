@@ -451,3 +451,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Continued Airflow reinforcement with expanded CFM calculation and ACH guides plus a CFM-versus-m³/h comparison. The content now uses consistent unit notation, demonstrates the volume conversions, separates airflow labels from ventilation claims, and directs duct decisions to area/velocity/friction review.
+
+## 2026-07-16
+
+- Expanded the remaining Airflow area/room/metric reference content: the CFM-per-area guide now identifies its missing variables; the room-CFM guide separates supply, return, outdoor, and exhaust questions; and the CFM conversion chart now provides forward/reverse lookup tables and unit-use limits.
