@@ -471,3 +471,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Consolidated the duplicate Round vs Rectangular Blog into the maintained Compare page; the old Blog URL is now a noindex canonical redirect and is removed from the sitemap. Expanded the distinct duct-sizing-mistakes guide and Flexible-versus-Rigid comparison with complete-path checks, installation conditions, and non-universal design limits.
+
+## 2026-07-16
+
+- Strengthened shared responsive UI: prose tables now use a 40rem minimum width inside horizontally scrollable wrappers; calculator selects receive the same sized, bordered control treatment as inputs with a custom indicator; dynamically added Sources sections now carry the `.source-polish` class in addition to the data attribute for targeted styling.
