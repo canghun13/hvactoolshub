@@ -311,3 +311,7 @@ robots와 sitemap 일치 여부 확인.
 
 - Refined Tool-page content spacing, table/list containers, formula blocks, and FAQ rhythm for clearer section separation.
 - Updated the Tool directory to use a wider three-column desktop grid and more balanced card typography, reducing excessive title wrapping.
+
+## 2026-07-16
+
+- Fixed breadcrumb layout: a specific `.breadcrumb ol.container` rule now preserves the shared centered container width instead of the list reset overriding its auto margins.
