@@ -360,3 +360,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Completed the supporting Airflow cluster with five Guides, two unit/metric comparisons, and three references. All published Airflow URLs are included in `sitemap.xml` and connect to the relevant calculators.
+
+## 2026-07-16
+
+- Expanded the Compare and Reference hubs to surface both BTU and Airflow clusters together.
