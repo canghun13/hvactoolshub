@@ -343,3 +343,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Removed the shared `.prose > h2` top margin entirely so content headings no longer create artificial vertical gaps.
+
+## 2026-07-16
+
+- Removed the redundant `.prose > h2` top-margin declarations while preserving the updated global heading spacing.
