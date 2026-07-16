@@ -447,3 +447,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Began Airflow-cluster substantive reinforcement: rebuilt the CFM guide, CFM-versus-ACH comparison, and HVAC Airflow Reference Table. The pages now identify the air stream, distinguish a volume-flow conversion from a ventilation/design requirement, provide room-volume examples, and link from airflow to duct checks without asserting unsupported universal ACH values.
+
+## 2026-07-16
+
+- Continued Airflow reinforcement with expanded CFM calculation and ACH guides plus a CFM-versus-m³/h comparison. The content now uses consistent unit notation, demonstrates the volume conversions, separates airflow labels from ventilation claims, and directs duct decisions to area/velocity/friction review.
