@@ -278,3 +278,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Added `/blog/template.html` as the reusable, noindex Blog template with required date metadata, FAQ, article structure, and a mandatory Related Tool placement.
 - Added responsive article-header, article-body, callout, and in-page navigation styles for Blog templates.
+
+## 2026-07-16
+
+- Added `/compare/template.html` as a reusable, noindex Compare template with the required comparison table and explicit links to both related Tools.
+- Added responsive comparison header, option-card, comparison-table, and Tool-CTA styles.
