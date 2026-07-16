@@ -293,3 +293,9 @@ robots와 sitemap 일치 여부 확인.
 
 - Completed the home-page visual system with a Tool-first hero, purpose-led path navigation, responsive engineering-workflow section, and final CTA.
 - Added a lightweight, image-free `assets/css/home.css` visual layer to preserve performance and minimize layout shift.
+
+## 2026-07-16
+
+- Added the published `/tool/btu-calculator.html` converter for BTU/h, watts, kilowatts, and refrigeration tons. Calculations use NIST Btu-to-joule conversion and the U.S. DOE's 12,000 BTU/h refrigeration-ton convention.
+- Added the connected `/blog/btu-units-guide.html` guide and included both published URLs in `sitemap.xml`.
+- Added public Tool and Blog directory pages so the primary navigation routes resolve to the published BTU calculator and its supporting guide.
