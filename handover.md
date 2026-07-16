@@ -323,3 +323,9 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Extended shared directory-card styling from `/tool/` to `/blog/`, `/compare/`, and `/reference/` so all content hubs use consistent grid density and typography.
+
+## 2026-07-16
+
+- Added About, Privacy Policy, Contact, and Disclaimer pages with shared Head, navigation, breadcrumbs, and updated-date metadata.
+- Added Footer links for About, Privacy Policy, Contact, and Disclaimer. The Contact page intentionally uses a commented replacement placeholder until a verified site email is available.
+- Privacy policy reflects the current static-site/GA4 implementation and notes that any future advertising or consent functionality will require a policy update.
