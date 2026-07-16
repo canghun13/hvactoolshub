@@ -319,3 +319,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Generalized content typography from Tool/Reference-only selectors to the shared `.prose` class, applying the same heading, paragraph, list, table, formula, and FAQ spacing to Tool, Blog, Compare, and Reference pages.
+
+## 2026-07-16
+
+- Extended shared directory-card styling from `/tool/` to `/blog/`, `/compare/`, and `/reference/` so all content hubs use consistent grid density and typography.
