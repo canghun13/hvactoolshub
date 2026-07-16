@@ -417,3 +417,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Began site-wide Tool UX reinforcement: shared `tool-polish.js` now adds Copy result and Print actions to published calculator forms without duplicating buttons, while the rebuilt shared loader retains header/footer, responsive directory styling, breadcrumb fallback, and metadata fallback behavior.
+
+## 2026-07-16
+
+- Added a shared visible Sources and scope section to published prose content. It selects NIST/DOE for BTU, ASHRAE for Duct/Airflow, and ACCA/DOE for Load pages, and explicitly frames pages as planning aids rather than substitutes for codes or qualified design.
