@@ -443,3 +443,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Continued BTU reinforcement with rebuilt BTU/h-versus-kW comparison, HVAC BTU lookup table, and BTU chart guide. The three pages now distinguish thermal capacity from electrical input, include worked conversion/lookup use, state chart limits, and link users through the load-to-capacity workflow rather than treating nominal capacity as a sizing result.
+
+## 2026-07-16
+
+- Began Airflow-cluster substantive reinforcement: rebuilt the CFM guide, CFM-versus-ACH comparison, and HVAC Airflow Reference Table. The pages now identify the air stream, distinguish a volume-flow conversion from a ventilation/design requirement, provide room-volume examples, and link from airflow to duct checks without asserting unsupported universal ACH values.
