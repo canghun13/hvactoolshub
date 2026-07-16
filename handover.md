@@ -439,3 +439,7 @@ robots와 sitemap 일치 여부 확인.
 
 - Began BTU-cluster substantive reinforcement. Rebuilt the BTU Formula guide, BTU/h-versus-refrigeration-tons comparison, and BTU Conversion Reference with correct visible multiplication/division notation, energy-versus-rate distinctions, worked examples, use limits, FAQs, and connected Load/BTU tool paths.
 - The revised conversion reference uses NIST’s Btu definition and directs users to a documented load calculation before equipment selection; it does not equate thermal kW to electrical input.
+
+## 2026-07-16
+
+- Continued BTU reinforcement with rebuilt BTU/h-versus-kW comparison, HVAC BTU lookup table, and BTU chart guide. The three pages now distinguish thermal capacity from electrical input, include worked conversion/lookup use, state chart limits, and link users through the load-to-capacity workflow rather than treating nominal capacity as a sizing result.
