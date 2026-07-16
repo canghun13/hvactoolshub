@@ -399,3 +399,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Added a shared content fallback in `assets/js/site.js` for published Tool, Guide, Compare, and Reference pages that were missing static breadcrumb/schema/OG-description markup. It inserts a section-aware breadcrumb, derives missing Open Graph description from the page description, and adds a basic page-type JSON-LD object only when no structured data exists.
 - Added the unified HVAC Load Calculator and its supporting guide, comparison, and reference to a new home-page Load Calculation section.
+
+## 2026-07-16
+
+- Site-wide audit identified two exact Tool duplicates: Airflow Calculator duplicated the CFM Calculator (room dimensions + ACH → CFM), and Round Duct Size Calculator duplicated Duct Size Calculator (CFM + velocity → round diameter). Both legacy URLs now noindex-canonicalize to the stronger page and are excluded from the sitemap.
+- Retained related but distinct tools where search intent/inputs differ: ACH, room airflow, CFM per area, rectangular duct sizing, equivalent diameter, velocity, and friction loss.
