@@ -478,4 +478,8 @@ robots와 sitemap 일치 여부 확인.
 
 ## 2026-07-16
 
+- Consolidated the duplicate BTU Units Guide into the maintained BTU Formula Explained guide. The legacy URL remains as a noindex canonical redirect and is removed from the sitemap; the stronger formula guide already covers the same BTU/h, watt, kilowatt, and refrigeration-ton intent with examples and source context.
+
+## 2026-07-16
+
 - Strengthened shared responsive UI: prose tables now use a 40rem minimum width inside horizontally scrollable wrappers; calculator selects receive the same sized, bordered control treatment as inputs with a custom indicator; dynamically added Sources sections now carry the `.source-polish` class in addition to the data attribute for targeted styling.
