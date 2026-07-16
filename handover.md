@@ -467,3 +467,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Continued Duct reinforcement with duct-velocity and friction-loss guides plus a friction-rate reference. These pages distinguish straight-run friction from total system resistance, document the Darcy-Weisbach input scope, and avoid publishing unsupported universal velocity or friction-rate defaults.
+
+## 2026-07-16
+
+- Consolidated the duplicate Round vs Rectangular Blog into the maintained Compare page; the old Blog URL is now a noindex canonical redirect and is removed from the sitemap. Expanded the distinct duct-sizing-mistakes guide and Flexible-versus-Rigid comparison with complete-path checks, installation conditions, and non-universal design limits.
