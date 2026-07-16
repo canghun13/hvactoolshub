@@ -474,4 +474,8 @@ robots와 sitemap 일치 여부 확인.
 
 ## 2026-07-16
 
+- Completed the remaining Duct editorial pass: expanded Low-versus-High Velocity and Equivalent Round Diameter resources with formula scope, examples, and full-path limits. Consolidated the unsupported “Recommended Duct Velocity Table” into the maintained velocity guide; its legacy URL is a noindex canonical redirect and is removed from the sitemap.
+
+## 2026-07-16
+
 - Strengthened shared responsive UI: prose tables now use a 40rem minimum width inside horizontally scrollable wrappers; calculator selects receive the same sized, bordered control treatment as inputs with a custom indicator; dynamically added Sources sections now carry the `.source-polish` class in addition to the data attribute for targeted styling.
