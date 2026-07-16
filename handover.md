@@ -409,3 +409,7 @@ robots와 sitemap 일치 여부 확인.
 
 - Content-quality audit consolidated four thin Load Reference pages into their stronger explanatory Guides. The legacy URLs remain noindex canonical redirects for existing links and are removed from `sitemap.xml`.
 - Audit risk retained for follow-up: older BTU/Airflow/Duct supporting pages still require page-by-page source and substantive-content expansion before they should be treated as authoritative references.
+
+## 2026-07-16
+
+- Corrected hub-discovery omissions: Guides, Compare, and Reference hubs now surface the maintained Load content alongside BTU, Airflow, and Duct content. Reference intentionally links the maintained Load Guide instead of the four consolidated noindex Reference URLs.
