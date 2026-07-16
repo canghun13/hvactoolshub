@@ -283,3 +283,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Added `/compare/template.html` as a reusable, noindex Compare template with the required comparison table and explicit links to both related Tools.
 - Added responsive comparison header, option-card, comparison-table, and Tool-CTA styles.
+
+## 2026-07-16
+
+- Added `/reference/template.html` as a reusable, noindex Reference template with source, formula, units, lookup table, specification, and Related Tool structures.
+- Added responsive Reference source, lookup, details, and related-Tool presentation styles.
