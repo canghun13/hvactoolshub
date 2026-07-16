@@ -262,3 +262,9 @@ robots와 sitemap 일치 여부 확인.
 
 모든 구조 변경은 아래에 날짜와 이유를 추가한다.
 삭제 금지.
+
+## 2026-07-16
+
+- Established the static-site foundation: `assets/css`, `assets/js`, and `assets/icons`, plus future content sections (`tool`, `blog`, `compare`, `reference`, `about`, and `contact`).
+- Refactored the home page with a complete SEO/GA4 head, responsive mobile-first layout, shared header/footer rendering, and an SVG favicon.
+- Normalized sitemap and robots URLs to the canonical lowercase domain.
