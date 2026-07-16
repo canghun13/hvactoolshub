@@ -339,3 +339,7 @@ robots와 sitemap 일치 여부 확인.
 
 - Reduced shared body-section spacing across content pages and all four directory hubs.
 - Removed directory-card forced height and automatic paragraph bottom alignment so card copy follows its title without artificial blank space.
+
+## 2026-07-16
+
+- Removed the shared `.prose > h2` top margin entirely so content headings no longer create artificial vertical gaps.
