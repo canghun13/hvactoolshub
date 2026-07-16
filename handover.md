@@ -455,3 +455,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Expanded the remaining Airflow area/room/metric reference content: the CFM-per-area guide now identifies its missing variables; the room-CFM guide separates supply, return, outdoor, and exhaust questions; and the CFM conversion chart now provides forward/reverse lookup tables and unit-use limits.
+
+## 2026-07-16
+
+- Consolidated the thin “Recommended Air Changes per Hour Table.” It had no defensible universal data table and duplicated the maintained ACH guide, so its legacy URL is now a noindex canonical redirect to the guide and is removed from the sitemap and Reference hub. Existing legacy links remain safe through the redirect pending their targeted Tool-page refresh.
