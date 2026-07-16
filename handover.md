@@ -306,3 +306,8 @@ robots와 sitemap 일치 여부 확인.
 - Added unique metadata, visible breadcrumbs, JSON-LD schemas, internal Tool/Blog links, and sitemap entries for all cluster pages.
 - Updated the Tool and Blog directories and added a home-page latest section ordered with the new BTU cluster pages first.
 - Added Reference and Compare directory pages so all BTU-cluster breadcrumb and navigation targets resolve.
+
+## 2026-07-16
+
+- Refined Tool-page content spacing, table/list containers, formula blocks, and FAQ rhythm for clearer section separation.
+- Updated the Tool directory to use a wider three-column desktop grid and more balanced card typography, reducing excessive title wrapping.
