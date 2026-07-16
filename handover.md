@@ -429,3 +429,8 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Continued substantive Load content reinforcement: expanded the Heating Load Guide with a heat-loss path table and sensible outdoor-air example; rebuilt the Manual J comparison around input differences, valid/invalid uses, room-airflow implications, and the correct load-to-equipment-to-duct sequence.
+
+## 2026-07-16
+
+- Expanded the remaining Load editorial pages: common calculation mistakes, cooling versus heating load, and residential versus commercial load calculation. Each now has a direct answer, input-specific tables, practical examples, explicit estimate limits, FAQs, and contextual links to the maintained Load, BTU, Airflow, and Duct tools.
+- Replaced the home Load card that targeted the retired Load Reference redirect with the maintained calculation-review guide. Rebuilt the home HTML while doing so to correct malformed arrow-span markup in the hero, navigation paths, and call to action.
