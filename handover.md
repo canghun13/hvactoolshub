@@ -1,0 +1,264 @@
+# HVACTOOLSHUB - PROJECT HANDOVER (v1.1)
+
+> 프로젝트의 단일 기준 문서(Source of Truth)
+> Codex는 작업 시작 전에 반드시 이 문서를 끝까지 읽는다.
+> 기존 내용을 삭제하거나 덮어쓰지 않는다. 모든 변경은 마지막 "변경 기록"에 추가한다.
+
+---
+
+# 1. 현재 프로젝트 상태
+
+- 프로젝트명: hvactoolshub
+- 도메인: hvactoolshub.com
+- GitHub Pages: 완료
+- Cloudflare: 완료
+- HTTPS: 완료
+- Google Search Console: 연결 완료
+- Google Analytics 4: 연결 완료
+
+## Google Analytics (절대 삭제 금지)
+
+Measurement ID
+
+G-EDV0PS9MP3
+
+규칙
+
+- 모든 HTML은 GA4가 포함되어야 한다.
+- 새 HTML 생성 시 반드시 포함 여부 확인.
+- 공통 Head에서 관리한다.
+- GA 코드가 삭제되거나 중복 삽입되면 안 된다.
+
+---
+
+# 2. 공통 Head 규칙
+
+모든 페이지 공통
+
+- GA4
+- charset
+- viewport
+- title
+- meta description
+- canonical
+- favicon
+- Open Graph
+- robots
+
+누락 금지.
+
+---
+
+# 3. 기술 스택
+
+- GitHub Pages
+- Cloudflare
+- HTML
+- CSS
+- Vanilla JavaScript
+- DB 사용 금지
+
+---
+
+# 4. 디렉토리
+
+/assets
+/tool
+/blog
+/compare
+/reference
+/about
+/contact
+
+필요 시 하위 디렉토리 추가 가능.
+
+---
+
+# 5. 사이트 철학
+
+- Tool First
+- SEO First
+- 기존 페이지 보강 우선
+- 성능 우선
+- 재사용 가능한 구조 우선
+
+Blog는 Tool을 지원하기 위한 콘텐츠이다.
+
+---
+
+# 6. SEO 전략
+
+우선순위
+
+1. 기존 페이지 보강
+2. Search Console 데이터 확인
+3. 신규 콘텐츠
+
+절대 검색량만 보고 키워드를 선택하지 않는다.
+
+선택 기준
+
+- 경쟁도
+- 검색 의도
+- 롱테일 여부
+- 내부링크 가능성
+
+---
+
+# 7. 콘텐츠 생성 규칙
+
+신규 페이지 생성 전 반드시
+
+1. 프로젝트 전체 중복 검사
+2. Search Console 확인
+3. 기존 페이지 보강 가능 여부 확인
+4. 웹 검색으로 경쟁도 조사
+5. 롱테일 키워드 조사
+6. 관련 Tool/Blog 연결 계획 수립
+
+---
+
+# 8. Tool 페이지
+
+필수
+
+- Tool
+- 설명
+- 공식
+- 변수 설명
+- 사용 예시
+- FAQ
+- Related Tool
+- Related Blog
+
+---
+
+# 9. Blog
+
+모든 Blog는 최소 1개 이상의 Tool과 연결.
+
+단순 정보글 금지.
+
+---
+
+# 10. Compare
+
+반드시 비교표 포함.
+
+양쪽 Tool 연결.
+
+---
+
+# 11. Reference
+
+- 공식
+- 단위
+- Lookup
+- 표
+- 규격
+
+---
+
+# 12. 최신순
+
+모든 페이지
+
+created_date
+updated_date
+
+홈 최신 목록은 updated_date DESC
+
+신규 + 수정 모두 최신에 노출.
+
+---
+
+# 13. 내부링크
+
+Tool → Blog
+Blog → Tool
+Compare → Tool
+Reference → Tool
+
+고립 페이지 금지.
+
+---
+
+# 14. Search Console 운영
+
+매 작업 시작 시
+
+- 신규 색인 문제 확인
+- CTR 낮은 페이지 확인
+- 노출 높고 클릭 낮은 페이지 보강
+- 크롤링 오류 확인
+
+---
+
+# 15. Google Analytics 운영
+
+매 작업 시작 시
+
+- 인기 페이지
+- 체류시간
+- 유입 경로
+- 이탈률
+
+확인 후 보강 우선순위 결정.
+
+---
+
+# 16. Sitemap
+
+새 페이지 추가 또는 URL 변경 시
+
+- sitemap.xml 갱신
+- Search Console 제출
+
+---
+
+# 17. robots.txt
+
+robots와 sitemap 일치 여부 확인.
+
+---
+
+# 18. 성능
+
+목표
+
+- Lighthouse 95+
+- CLS 최소
+- JS 최소화
+- Lazy Load
+- WebP
+
+---
+
+# 19. 금지
+
+- AI 티 나는 글
+- 중복 콘텐츠
+- 키워드 남발
+- 추측 공식
+- 중복 코드
+- 기존 URL 변경
+
+---
+
+# 20. 작업 종료 체크리스트
+
+- GA4 확인
+- 내부링크 확인
+- Meta 확인
+- Canonical 확인
+- Sitemap 확인
+- Search Console 영향 검토
+- Commit
+- Push
+
+---
+
+# 21. 변경 기록
+
+모든 구조 변경은 아래에 날짜와 이유를 추가한다.
+삭제 금지.
