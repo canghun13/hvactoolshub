@@ -273,3 +273,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Added `/tool/template.html` as the reusable, noindex Tool page template. It includes the required calculator, explanation, formula, variables, example, FAQ, related-resource, date, GA4, and SEO structures.
 - Extended the shared styles and JavaScript with responsive Tool-template UI patterns and a deliberate template-only form guard; verified calculation logic must be supplied per published tool.
+
+## 2026-07-16
+
+- Added `/blog/template.html` as the reusable, noindex Blog template with required date metadata, FAQ, article structure, and a mandatory Related Tool placement.
+- Added responsive article-header, article-body, callout, and in-page navigation styles for Blog templates.
