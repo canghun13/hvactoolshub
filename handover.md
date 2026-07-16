@@ -459,3 +459,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Consolidated the thin “Recommended Air Changes per Hour Table.” It had no defensible universal data table and duplicated the maintained ACH guide, so its legacy URL is now a noindex canonical redirect to the guide and is removed from the sitemap and Reference hub. Existing legacy links remain safe through the redirect pending their targeted Tool-page refresh.
+
+## 2026-07-16
+
+- Began Duct-cluster substantive reinforcement: rebuilt the duct-sizing workflow guide, the round-versus-rectangular comparison, and the round-duct area chart. They now use safe geometry/velocity examples, require complete pressure-path checks, and avoid presenting a single velocity, shape, or chart row as a universal final design choice.
