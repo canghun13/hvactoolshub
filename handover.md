@@ -329,3 +329,8 @@ robots와 sitemap 일치 여부 확인.
 - Added About, Privacy Policy, Contact, and Disclaimer pages with shared Head, navigation, breadcrumbs, and updated-date metadata.
 - Added Footer links for About, Privacy Policy, Contact, and Disclaimer. The Contact page intentionally uses a commented replacement placeholder until a verified site email is available.
 - Privacy policy reflects the current static-site/GA4 implementation and notes that any future advertising or consent functionality will require a policy update.
+
+## 2026-07-16
+
+- Refined the shared static information-page layout: general information panels are now compact, left-accented notes rather than dominant blue cards.
+- Reworked Contact categories into a compact responsive grid: two columns on larger screens and one column on mobile.
