@@ -347,3 +347,8 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Removed the redundant `.prose > h2` top-margin declarations while preserving the updated global heading spacing.
+
+## 2026-07-16
+
+- Completed the BTU content cluster with three intent-specific Guides, a BTU-vs-kW comparison, and an HVAC BTU reference table; existing BTU Tools, BTU-vs-Tons comparison, and conversion reference were retained to avoid duplicate URLs.
+- Updated content hubs, the home latest list, and `sitemap.xml` to connect the cluster. `robots.txt` already permits crawling and references the canonical sitemap, so no change was required.
