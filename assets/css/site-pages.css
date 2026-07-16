@@ -1,7 +1,7 @@
 .static-page .page-intro{padding-block:3.5rem 2rem;background:linear-gradient(135deg,#e7f2fb,#f7fbff 65%);border-bottom:1px solid var(--border)}
 .static-page .page-intro h1{max-width:19ch;font-size:clamp(2.25rem,8vw,4rem)}
 .static-page .page-intro__lead{max-width:44rem;margin-bottom:.5rem;color:var(--muted);font-size:1.125rem}
-.static-page .page-content{padding-block:2.5rem 4rem}
+.static-page .page-content{padding-block:2rem 3rem}
 .static-page .prose{max-width:48rem}
 .static-page .info-panel{max-width:42rem;margin:1.75rem 0;padding:1rem 1.125rem;background:#f5f9fc;border:1px solid var(--border);border-left:4px solid var(--primary);border-radius:.5rem}
 .static-page .info-panel h2{margin-bottom:.5rem;font-size:1.125rem}

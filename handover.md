@@ -334,3 +334,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Refined the shared static information-page layout: general information panels are now compact, left-accented notes rather than dominant blue cards.
 - Reworked Contact categories into a compact responsive grid: two columns on larger screens and one column on mobile.
+
+## 2026-07-16
+
+- Reduced shared body-section spacing across content pages and all four directory hubs.
+- Removed directory-card forced height and automatic paragraph bottom alignment so card copy follows its title without artificial blank space.
