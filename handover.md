@@ -482,4 +482,8 @@ robots와 sitemap 일치 여부 확인.
 
 ## 2026-07-16
 
+- Began active Tool validation reinforcement for the shared Airflow and BTU-cluster calculators. Zero, negative, non-numeric, and empty inputs now clear any stale result and show an explicit validation message; valid calculations retain the existing conversion formulas and reset behavior.
+
+## 2026-07-16
+
 - Strengthened shared responsive UI: prose tables now use a 40rem minimum width inside horizontally scrollable wrappers; calculator selects receive the same sized, bordered control treatment as inputs with a custom indicator; dynamically added Sources sections now carry the `.source-polish` class in addition to the data attribute for targeted styling.
