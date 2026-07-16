@@ -421,3 +421,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Added a shared visible Sources and scope section to published prose content. It selects NIST/DOE for BTU, ASHRAE for Duct/Airflow, and ACCA/DOE for Load pages, and explicitly frames pages as planning aids rather than substitutes for codes or qualified design.
+
+## 2026-07-16
+
+- Substantively rebuilt the two highest-priority Load Guides: `how-to-calculate-hvac-load.html` now includes a component workflow, input table, transparent numeric example, and next-step tool flow; `cooling-load-calculation-explained.html` now distinguishes sensible/latent load, provides a gain table, checked conversion examples, and decision criteria.
