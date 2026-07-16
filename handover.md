@@ -288,3 +288,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Added `/reference/template.html` as a reusable, noindex Reference template with source, formula, units, lookup table, specification, and Related Tool structures.
 - Added responsive Reference source, lookup, details, and related-Tool presentation styles.
+
+## 2026-07-16
+
+- Completed the home-page visual system with a Tool-first hero, purpose-led path navigation, responsive engineering-workflow section, and final CTA.
+- Added a lightweight, image-free `assets/css/home.css` visual layer to preserve performance and minimize layout shift.
