@@ -368,3 +368,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Updated the home Latest section to surface newly added Airflow pages alongside BTU references by their shared updated date.
+
+## 2026-07-16
+
+- Completed Tool hub discovery by adding all seven Airflow calculators alongside the existing BTU tools.
