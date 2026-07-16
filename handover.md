@@ -378,3 +378,9 @@ robots와 sitemap 일치 여부 확인.
 - Added the Duct Design cluster: seven client-side calculators (duct size, rectangular and round sizing, equivalent diameter, velocity, area, and transparent straight-duct friction loss), five guides, three comparisons, and four references.
 - Duct sizing uses the CFM/area/velocity relationship. Equivalent round diameter uses the Huebscher equal-friction approximation; the friction-loss tool requires explicit air-density and Darcy-friction-factor inputs rather than treating a default as a universal design rule.
 - Updated Tool, Guide, Compare, and Reference hubs and added all Duct URLs to `sitemap.xml`. `robots.txt` already permits crawling and uses the canonical sitemap.
+
+## 2026-07-16
+
+- Added the HVAC Load cluster: eight preliminary planning/conversion tools, six guides, three comparisons, and four references.
+- Area-based tools require an explicit planning rate and adjustment factor. They are labelled as preliminary estimates only and do not represent Manual J or ASHRAE detailed load calculations; pages identify climate, envelope, glazing, orientation, infiltration, ventilation, internal gains, humidity, and schedules as relevant limitations.
+- Added the published Load URLs to `sitemap.xml`; `robots.txt` remains compatible with the canonical sitemap.
