@@ -299,3 +299,10 @@ robots와 sitemap 일치 여부 확인.
 - Added the published `/tool/btu-calculator.html` converter for BTU/h, watts, kilowatts, and refrigeration tons. Calculations use NIST Btu-to-joule conversion and the U.S. DOE's 12,000 BTU/h refrigeration-ton convention.
 - Added the connected `/blog/btu-units-guide.html` guide and included both published URLs in `sitemap.xml`.
 - Added public Tool and Blog directory pages so the primary navigation routes resolve to the published BTU calculator and its supporting guide.
+
+## 2026-07-16
+
+- Expanded the BTU cluster with four interconnected calculators, a BTU conversion reference, a What Is BTU guide, and a BTU vs HVAC Tons comparison.
+- Added unique metadata, visible breadcrumbs, JSON-LD schemas, internal Tool/Blog links, and sitemap entries for all cluster pages.
+- Updated the Tool and Blog directories and added a home-page latest section ordered with the new BTU cluster pages first.
+- Added Reference and Compare directory pages so all BTU-cluster breadcrumb and navigation targets resolve.

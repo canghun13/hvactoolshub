@@ -14,6 +14,9 @@
 <loc>https://hvactoolshub.com/blog/</loc>
 </url>
 
+<url><loc>https://hvactoolshub.com/reference/</loc></url>
+<url><loc>https://hvactoolshub.com/compare/</loc></url>
+
 <url>
 <loc>https://hvactoolshub.com/tool/btu-calculator.html</loc>
 </url>
@@ -21,5 +24,13 @@
 <url>
 <loc>https://hvactoolshub.com/blog/btu-units-guide.html</loc>
 </url>
+
+<url><loc>https://hvactoolshub.com/tool/btu-to-tons-calculator.html</loc></url>
+<url><loc>https://hvactoolshub.com/tool/tons-to-btu-calculator.html</loc></url>
+<url><loc>https://hvactoolshub.com/tool/btu-per-square-foot-calculator.html</loc></url>
+<url><loc>https://hvactoolshub.com/tool/room-btu-calculator.html</loc></url>
+<url><loc>https://hvactoolshub.com/reference/btu-conversion-reference.html</loc></url>
+<url><loc>https://hvactoolshub.com/blog/what-is-btu.html</loc></url>
+<url><loc>https://hvactoolshub.com/compare/btu-vs-hvac-tons.html</loc></url>
 
 </urlset>
