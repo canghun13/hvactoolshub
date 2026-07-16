@@ -463,3 +463,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Began Duct-cluster substantive reinforcement: rebuilt the duct-sizing workflow guide, the round-versus-rectangular comparison, and the round-duct area chart. They now use safe geometry/velocity examples, require complete pressure-path checks, and avoid presenting a single velocity, shape, or chart row as a universal final design choice.
+
+## 2026-07-16
+
+- Continued Duct reinforcement with duct-velocity and friction-loss guides plus a friction-rate reference. These pages distinguish straight-run friction from total system resistance, document the Darcy-Weisbach input scope, and avoid publishing unsupported universal velocity or friction-rate defaults.
