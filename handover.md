@@ -434,3 +434,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Expanded the remaining Load editorial pages: common calculation mistakes, cooling versus heating load, and residential versus commercial load calculation. Each now has a direct answer, input-specific tables, practical examples, explicit estimate limits, FAQs, and contextual links to the maintained Load, BTU, Airflow, and Duct tools.
 - Replaced the home Load card that targeted the retired Load Reference redirect with the maintained calculation-review guide. Rebuilt the home HTML while doing so to correct malformed arrow-span markup in the hero, navigation paths, and call to action.
+
+## 2026-07-16
+
+- Began BTU-cluster substantive reinforcement. Rebuilt the BTU Formula guide, BTU/h-versus-refrigeration-tons comparison, and BTU Conversion Reference with correct visible multiplication/division notation, energy-versus-rate distinctions, worked examples, use limits, FAQs, and connected Load/BTU tool paths.
+- The revised conversion reference uses NIST’s Btu definition and directs users to a documented load calculation before equipment selection; it does not equate thermal kW to electrical input.
