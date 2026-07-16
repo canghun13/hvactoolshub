@@ -389,3 +389,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Consolidated duplicate Load intents after audit: Residential and Commercial planning URLs canonicalize to the single HVAC Load Calculator; Room Cooling canonicalizes to Cooling Load Calculator; HVAC Tonnage canonicalizes to the existing BTU to Tons Calculator; HVAC Load per Square Foot canonicalizes to the existing BTU per Square Foot Calculator.
 - The five duplicate URLs are retained only as noindex redirects for existing links and are removed from `sitemap.xml`.
+
+## 2026-07-16
+
+- Replaced the area-rate Load Calculator with an input-transparent component aggregator. It supports US customary and SI geometry/temperature/airflow input conversion, sums documented envelope, solar, people, lighting, equipment, and outdoor-air sensible components, and reports cooling/heating BTU/h, tons, kW, and a supply-air-ΔT-based sensible CFM estimate.
+- Added Copy and Print controls, validation/ranges, and explicit limitations. Cooling and Heating standalone URLs now noindex-canonicalize to the unified calculator and were removed from the sitemap.
