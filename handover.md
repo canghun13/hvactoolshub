@@ -404,3 +404,8 @@ robots와 sitemap 일치 여부 확인.
 
 - Site-wide audit identified two exact Tool duplicates: Airflow Calculator duplicated the CFM Calculator (room dimensions + ACH → CFM), and Round Duct Size Calculator duplicated Duct Size Calculator (CFM + velocity → round diameter). Both legacy URLs now noindex-canonicalize to the stronger page and are excluded from the sitemap.
 - Retained related but distinct tools where search intent/inputs differ: ACH, room airflow, CFM per area, rectangular duct sizing, equivalent diameter, velocity, and friction loss.
+
+## 2026-07-16
+
+- Content-quality audit consolidated four thin Load Reference pages into their stronger explanatory Guides. The legacy URLs remain noindex canonical redirects for existing links and are removed from `sitemap.xml`.
+- Audit risk retained for follow-up: older BTU/Airflow/Duct supporting pages still require page-by-page source and substantive-content expansion before they should be treated as authoritative references.
