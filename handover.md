@@ -527,3 +527,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt both direction-specific Airflow metric converters. The CFM-to-m3/h and m3/h-to-CFM tools now use corrected notation, positive inputs, explicit reciprocal conversion factors, examples, and scope limits that distinguish unit conversion from fan performance, ventilation, or equipment comparison.
+
+## 2026-07-20
+
+- Began the Duct tool pass with the core Duct Size Calculator. It now uses corrected formula/unit notation, positive inputs, transparent area/diameter math, a theoretical-size label, and complete-path limitations that direct users to velocity and friction checks instead of treating a geometry result as final duct design.
