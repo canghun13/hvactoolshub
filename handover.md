@@ -676,3 +676,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Began Psychrometrics Cluster with one maintained multi-property calculator rather than five shallow duplicate URLs. It derives dew point, humidity ratio, moist-air enthalpy, and an explicitly approximate constant-enthalpy wet bulb from dry bulb, RH, and pressure. Additional dedicated URLs and editorial content remain pending.
+
+## 2026-07-20
+
+- Completed Psychrometrics Cluster phase 1 at a safe consolidated scope: the maintained Psychrometric Calculator provides the requested RH/Dew Point/Humidity Ratio/Moist-Air Enthalpy/Wet-Bulb intent as related properties of one documented air state. Dedicated duplicate URLs and editorial pages are deferred. Added Cooling Load to Psychrometrics workflow linking.
