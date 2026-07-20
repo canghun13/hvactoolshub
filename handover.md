@@ -571,3 +571,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the Guides hub around maintained load-to-capacity and airflow-to-duct learning paths. It now exposes the strengthened BTU, Airflow, and Duct guides alongside Load content, uses only maintained URLs, and preserves the shared directory design.
+
+## 2026-07-20
+
+- Rebuilt the BTU/h versus HVAC Tons comparison with corrected dates, arrows, quotation text, and capacity-label explanations. It retains the comparison table and conversion workflow while reinforcing that thermal capacity conversion is not a load calculation, electrical-input rating, or equipment-selection approval.
