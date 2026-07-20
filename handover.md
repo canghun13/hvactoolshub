@@ -611,3 +611,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Replaced the maintained BTU calculation guide's consolidated Load Reference link with the maintained How to Calculate HVAC Load guide.
+
+## 2026-07-20
+
+- Rebuilt the maintained Room CFM guide with corrected unit/date notation and direct CFM/ACH tool paths, removing its link to the consolidated noindex Room Airflow Calculator.
