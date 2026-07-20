@@ -649,3 +649,5 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Improved Compare and Reference hub scanability: every category heading now has a concise explanatory paragraph and consistent spacing before its card grid, matching the information hierarchy used by the Tools and Guides hubs.
+
+- Aligned Compare and Reference hub category markup with Tools and Guides: each section now uses the shared home-section-heading wrapper, an eyebrow label, H2, and supporting description.
