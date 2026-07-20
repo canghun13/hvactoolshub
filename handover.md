@@ -631,3 +631,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Removed one empty `<url>` node discovered during the final sitemap/robots validation. The sitemap now contains maintained URLs only.
+
+## 2026-07-20
+
+- Added static JSON-LD to the six sitemap pages previously relying on runtime fallback schema: Home, Tools, Guides, the Load Mistakes guide, Cooling-versus-Heating Load, and Residential-versus-Commercial Load. Each now exposes an appropriate WebSite, CollectionPage, or Article object in its initial HTML.
