@@ -507,3 +507,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the area-based BTU tools to prevent a ratio or chosen planning rate from being presented as final sizing. `btu-per-square-foot-calculator.html` now frames its output as a comparison metric, while `room-btu-calculator.html` requires a documented rate and directs users to the component-based Load Calculator. Both pages now use corrected unit notation, positive input bounds, expanded scope limits, and maintained workflow links.
+
+## 2026-07-20
+
+- Began the Airflow tool pass by correcting shared result-unit labels in `assets/js/airflow.js`. The seven Airflow calculator modes now use encoding-safe `CFM per sq ft` and `m3/h` result text while retaining their existing validated formulas and reset behavior.
