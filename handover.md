@@ -583,3 +583,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the BTU/h versus kW comparison with corrected dates and ownership grammar, retaining the conversion table and making the thermal-capacity versus electrical-input decision path explicit.
+
+## 2026-07-20
+
+- Rebuilt the CFM-versus-ACH comparison around the actual flow-to-volume distinction. It now includes the reciprocal formulas, a checked room-volume example, air-stream labeling guidance, explicit non-compliance limits, updated schema/dates, and maintained CFM, ACH, Reference, and Duct workflow links.
