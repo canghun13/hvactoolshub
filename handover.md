@@ -543,3 +543,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Expanded the Duct Velocity Calculator with distinct working round and rectangular modes already supported by the shared script. Both modes now use actual inside dimensions and positive validation, while the page clarifies that face velocity is a preliminary geometry check requiring separate resistance, noise, fitting, and complete-path review.
+
+## 2026-07-20
+
+- Expanded the Duct Cross-Sectional Area Calculator with working round and rectangular modes already supported by the shared script. The page now uses inside dimensions, positive validation, corrected area notation, and a clear area-to-velocity workflow without treating face area as a pressure-loss or distribution result.
