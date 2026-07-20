@@ -563,3 +563,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the HVAC Load Calculator page UI around the maintained component aggregator. Input labels, unit selector, dates, schema, scope, formulas, limits, FAQ, and workflow links now use encoding-safe text and match the active calculation behavior. The page continues to distinguish preliminary planning from Manual J, detailed load methods, and final equipment design.
+
+## 2026-07-20
+
+- Rebuilt the Tools hub around maintained user flows rather than legacy URL count. It now surfaces the active Load, BTU, Airflow, and Duct calculators by purpose, including recently strengthened area, velocity, equivalent-diameter, and friction tools; consolidated noindex URLs are not listed.
