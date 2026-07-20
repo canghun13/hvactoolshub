@@ -523,3 +523,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the maintained CFM-per-square-foot tool as an airflow normalization check. It now uses positive inputs, clear air-stream and area-boundary guidance, corrected units/formula notation, ratio limits, maintained CFM/ACH/Load paths, and avoids presenting an area ratio as a universal design target.
+
+## 2026-07-20
+
+- Rebuilt both direction-specific Airflow metric converters. The CFM-to-m3/h and m3/h-to-CFM tools now use corrected notation, positive inputs, explicit reciprocal conversion factors, examples, and scope limits that distinguish unit conversion from fan performance, ventilation, or equipment comparison.
