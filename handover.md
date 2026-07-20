@@ -672,3 +672,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Expanded Refrigeration content with two intent-specific Guides (matched-point Superheat versus Subcooling and refrigerant-side capacity from mass flow and enthalpy difference) plus a Refrigeration Units and Measurement Reference. The Ton-of-Refrigeration guide and separate Ton Conversion Reference were not created because the maintained What Is BTU, BTU/h-versus-Tons comparison, and BTU Conversion Reference already satisfy that intent. Added active URLs to the Guides/Reference hubs, sitemap, llms.txt, and related refrigeration tool paths.
+
+## 2026-07-20
+
+- Began Psychrometrics Cluster with one maintained multi-property calculator rather than five shallow duplicate URLs. It derives dew point, humidity ratio, moist-air enthalpy, and an explicitly approximate constant-enthalpy wet bulb from dry bulb, RH, and pressure. Additional dedicated URLs and editorial content remain pending.

@@ -20,6 +20,11 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
 - https://hvactoolshub.com/tool/refrigerant-subcooling-calculator.html
   - Calculates a matched liquid-line temperature difference below saturation without supplying a charging target.
 
+## Psychrometric Tools
+
+- https://hvactoolshub.com/tool/psychrometric-calculator.html
+  - Calculates core moist-air properties from dry bulb, relative humidity, and total pressure.
+
 ## Airflow Tools
 
 - https://hvactoolshub.com/tool/cfm-calculator.html
