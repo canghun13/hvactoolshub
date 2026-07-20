@@ -491,3 +491,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Strengthened shared responsive UI: prose tables now use a 40rem minimum width inside horizontally scrollable wrappers; calculator selects receive the same sized, bordered control treatment as inputs with a custom indicator; dynamically added Sources sections now carry the `.source-polish` class in addition to the data attribute for targeted styling.
+
+## 2026-07-20
+
+- Expanded the remaining core BTU guides, `what-is-btu.html` and `how-to-calculate-btu.html`, with an explicit energy-versus-rate distinction, thermal-versus-electrical-label limits, conversion tables, a transparent component-load example, formulas, and the load-to-airflow-to-duct workflow. The guides retain their existing URLs and now direct sizing decisions to the maintained preliminary Load Calculator rather than an area-only rule.
