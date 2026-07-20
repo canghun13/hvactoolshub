@@ -539,3 +539,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Expanded the Equivalent Duct Diameter Calculator around its actual Huebscher equal-friction scope. It now has corrected notation, positive inputs, explicit non-equivalence of area/velocity/fittings, and linked rectangular-geometry and friction checks instead of presenting the result as a direct duct substitution.
+
+## 2026-07-20
+
+- Expanded the Duct Velocity Calculator with distinct working round and rectangular modes already supported by the shared script. Both modes now use actual inside dimensions and positive validation, while the page clarifies that face velocity is a preliminary geometry check requiring separate resistance, noise, fitting, and complete-path review.
