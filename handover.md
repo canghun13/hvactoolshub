@@ -499,3 +499,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Aligned the central BTU Converter validation with the audited cluster behavior: empty, zero, negative, and non-numeric entries now clear all stale outputs and require a value greater than zero. The next content pass will update its legacy related-guide link to the maintained BTU Formula guide.
+
+## 2026-07-20
+
+- Expanded the direction-specific BTU-to-tons and tons-to-BTU tools while retaining both distinct conversion intents. Both now use valid positive input bounds, corrected formula notation, updated metadata, result interpretation, unit tables, worked examples, and explicit load-before-equipment-selection guidance.
