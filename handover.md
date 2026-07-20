@@ -664,3 +664,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Refrigeration phase 2 verification retained the three phase-1 tools without new duplicate URLs. Verified the documented US/SI capacity relationships, matched-point temperature-difference logic, positive/invalid input handling, reset behavior, shared Copy/Print enhancement, source injection, responsive result grid, and FAQ scope. Strengthened the maintained workflow links: HVAC Load to Refrigeration Capacity, Capacity to both ton converters, and both ton converters back to Refrigeration Capacity. Deferred new Refrigeration Guides and References to avoid adding pages without a separate completed quality pass in the remaining session.
+
+## 2026-07-20
+
+- Fixed a production error in the Refrigeration Capacity Calculator: its dynamic formula label sits outside the form, so querying it from the form produced a null 	extContent error before any calculation could run. The shared refrigeration script now resolves that page-level label from the document; capacity, superheat, and subcooling form behavior remains isolated.
