@@ -579,3 +579,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the BTU Conversion Reference with corrected dates, source text, ownership grammar, and thermal-capacity wording. The reference retains verified conversion relationships, lookup rows, formulas, an electrical-input warning, and NIST/DOE source context.
+
+## 2026-07-20
+
+- Rebuilt the BTU/h versus kW comparison with corrected dates and ownership grammar, retaining the conversion table and making the thermal-capacity versus electrical-input decision path explicit.
