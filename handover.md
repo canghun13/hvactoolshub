@@ -619,3 +619,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the Duct Sizing Mistakes guide with corrected unit/date notation and a direct maintained CFM Calculator workflow link, removing its link to the consolidated noindex Room Airflow Calculator.
+
+## 2026-07-20
+
+- Browser mobile testing found that Reference grid content could force page-level horizontal overflow when a responsive table had a minimum width. Added grid-child and header-navigation minimum-width safeguards so tables remain inside their intended scroll wrapper and navigation can shrink/scroll within the header.
