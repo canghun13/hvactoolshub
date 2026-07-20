@@ -531,3 +531,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Began the Duct tool pass with the core Duct Size Calculator. It now uses corrected formula/unit notation, positive inputs, transparent area/diameter math, a theoretical-size label, and complete-path limitations that direct users to velocity and friction checks instead of treating a geometry result as final duct design.
+
+## 2026-07-20
+
+- Expanded the distinct Rectangular Duct Size Calculator with corrected formula notation, positive inputs, transparent area/ratio dimensions, and equal-area versus equal-resistance limits. It now sends users to equivalent-diameter and friction checks rather than treating an aspect-ratio result as final design.
