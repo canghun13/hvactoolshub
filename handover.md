@@ -515,3 +515,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the ACH Calculator around its actual purpose: calculating a volume-flow ratio from an identified CFM stream and room volume. The page now uses positive input bounds, corrected unit/formula notation, explains supply/outdoor/exhaust/recirculation distinctions, replaces its retired reference link, and provides maintained CFM, guide, comparison, and reference paths.
+
+## 2026-07-20
+
+- Consolidated `room-airflow-calculator.html` into the maintained CFM Calculator after confirming the two tools had identical inputs (length, width, height, ACH), formula, and CFM output. The legacy URL remains a noindex canonical redirect and was removed from the sitemap; internal-link cleanup continues in the relevant page refreshes.
