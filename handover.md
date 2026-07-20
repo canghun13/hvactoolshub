@@ -623,3 +623,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Browser mobile testing found that Reference grid content could force page-level horizontal overflow when a responsive table had a minimum width. Added grid-child and header-navigation minimum-width safeguards so tables remain inside their intended scroll wrapper and navigation can shrink/scroll within the header.
+
+## 2026-07-20
+
+- Versioned the shared stylesheet URL across all 66 HTML pages (`style.css?v=20260720-mobilefix`) to force clients and CDN layers to request the responsive-overflow fix rather than reuse a stale CSS asset.
