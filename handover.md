@@ -645,3 +645,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Added root `llms.txt` as a concise index of active core calculators, Airflow, Duct, Load, Guide, Comparison, Reference, and site-information URLs. It intentionally excludes noindex redirects and `llms-full.txt`.
+
+## 2026-07-20
+
+- Improved Compare and Reference hub scanability: every category heading now has a concise explanatory paragraph and consistent spacing before its card grid, matching the information hierarchy used by the Tools and Guides hubs.
