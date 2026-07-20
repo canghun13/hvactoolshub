@@ -587,3 +587,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the CFM-versus-ACH comparison around the actual flow-to-volume distinction. It now includes the reciprocal formulas, a checked room-volume example, air-stream labeling guidance, explicit non-compliance limits, updated schema/dates, and maintained CFM, ACH, Reference, and Duct workflow links.
+
+## 2026-07-20
+
+- Rebuilt the Compare hub using maintained URLs only. Its capacity, airflow, duct, and next-tool paths now surface every maintained comparison, including previously undiscoverable BTU/kW, metric-airflow, flexible/rigid, and low/high-velocity comparisons.
