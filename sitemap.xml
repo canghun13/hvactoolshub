@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -87,4 +87,6 @@
 <url><loc>https://hvactoolshub.com/blog/how-to-calculate-refrigeration-capacity.html</loc></url>
 <url><loc>https://hvactoolshub.com/reference/refrigeration-units-reference.html</loc></url>
 <url><loc>https://hvactoolshub.com/tool/psychrometric-calculator.html</loc></url>
+<url><loc>https://hvactoolshub.com/blog/hvac-psychrometrics-explained.html</loc></url>
+<url><loc>https://hvactoolshub.com/reference/psychrometric-properties-reference.html</loc></url>
 </urlset>

@@ -1,4 +1,4 @@
-# HVAC Tools Hub
+﻿# HVAC Tools Hub
 
 HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airflow, duct geometry, and preliminary load-planning questions. It helps homeowners, technicians, students, and HVAC professionals check transparent unit conversions and early calculations; it does not replace project-specific design methods, applicable codes, or qualified professional review.
 
@@ -80,6 +80,9 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
 - https://hvactoolshub.com/blog/how-to-calculate-refrigeration-capacity.html
   - Explains refrigerant-side capacity from a documented mass-flow and enthalpy-difference boundary.
 
+- https://hvactoolshub.com/blog/hvac-psychrometrics-explained.html
+  - Explains how dry bulb, relative humidity, dew point, humidity ratio, enthalpy, and wet bulb describe one HVAC air state.
+
 ## Comparisons
 
 - https://hvactoolshub.com/compare/btu-vs-hvac-tons.html
@@ -108,6 +111,9 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
 
 - https://hvactoolshub.com/reference/refrigeration-units-reference.html
   - Provides capacity, mass-flow, enthalpy, and temperature-difference unit relationships for refrigeration checks.
+
+- https://hvactoolshub.com/reference/psychrometric-properties-reference.html
+  - Provides psychrometric variable definitions, IP/SI units, and the conditions needed for a moist-air property check.
 
 ## Site Information
 

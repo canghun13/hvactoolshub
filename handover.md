@@ -1,39 +1,39 @@
-# HVACTOOLSHUB - PROJECT HANDOVER (v1.1)
+﻿# HVACTOOLSHUB - PROJECT HANDOVER (v1.1)
 
-> 프로젝트의 단일 기준 문서(Source of Truth)
-> Codex는 작업 시작 전에 반드시 이 문서를 끝까지 읽는다.
-> 기존 내용을 삭제하거나 덮어쓰지 않는다. 모든 변경은 마지막 "변경 기록"에 추가한다.
+> ?꾨줈?앺듃???⑥씪 湲곗? 臾몄꽌(Source of Truth)
+> Codex???묒뾽 ?쒖옉 ?꾩뿉 諛섎뱶????臾몄꽌瑜??앷퉴吏 ?쎈뒗??
+> 湲곗〈 ?댁슜????젣?섍굅????뼱?곗? ?딅뒗?? 紐⑤뱺 蹂寃쎌? 留덉?留?"蹂寃?湲곕줉"??異붽??쒕떎.
 
 ---
 
-# 1. 현재 프로젝트 상태
+# 1. ?꾩옱 ?꾨줈?앺듃 ?곹깭
 
-- 프로젝트명: hvactoolshub
-- 도메인: hvactoolshub.com
-- GitHub Pages: 완료
-- Cloudflare: 완료
-- HTTPS: 완료
-- Google Search Console: 연결 완료
-- Google Analytics 4: 연결 완료
+- ?꾨줈?앺듃紐? hvactoolshub
+- ?꾨찓?? hvactoolshub.com
+- GitHub Pages: ?꾨즺
+- Cloudflare: ?꾨즺
+- HTTPS: ?꾨즺
+- Google Search Console: ?곌껐 ?꾨즺
+- Google Analytics 4: ?곌껐 ?꾨즺
 
-## Google Analytics (절대 삭제 금지)
+## Google Analytics (?덈? ??젣 湲덉?)
 
 Measurement ID
 
 G-EDV0PS9MP3
 
-규칙
+洹쒖튃
 
-- 모든 HTML은 GA4가 포함되어야 한다.
-- 새 HTML 생성 시 반드시 포함 여부 확인.
-- 공통 Head에서 관리한다.
-- GA 코드가 삭제되거나 중복 삽입되면 안 된다.
+- 紐⑤뱺 HTML? GA4媛 ?ы븿?섏뼱???쒕떎.
+- ??HTML ?앹꽦 ??諛섎뱶???ы븿 ?щ? ?뺤씤.
+- 怨듯넻 Head?먯꽌 愿由ы븳??
+- GA 肄붾뱶媛 ??젣?섍굅??以묐났 ?쎌엯?섎㈃ ???쒕떎.
 
 ---
 
-# 2. 공통 Head 규칙
+# 2. 怨듯넻 Head 洹쒖튃
 
-모든 페이지 공통
+紐⑤뱺 ?섏씠吏 怨듯넻
 
 - GA4
 - charset
@@ -45,22 +45,22 @@ G-EDV0PS9MP3
 - Open Graph
 - robots
 
-누락 금지.
+?꾨씫 湲덉?.
 
 ---
 
-# 3. 기술 스택
+# 3. 湲곗닠 ?ㅽ깮
 
 - GitHub Pages
 - Cloudflare
 - HTML
 - CSS
 - Vanilla JavaScript
-- DB 사용 금지
+- DB ?ъ슜 湲덉?
 
 ---
 
-# 4. 디렉토리
+# 4. ?붾젆?좊━
 
 /assets
 /tool
@@ -70,63 +70,63 @@ G-EDV0PS9MP3
 /about
 /contact
 
-필요 시 하위 디렉토리 추가 가능.
+?꾩슂 ???섏쐞 ?붾젆?좊━ 異붽? 媛??
 
 ---
 
-# 5. 사이트 철학
+# 5. ?ъ씠??泥좏븰
 
 - Tool First
 - SEO First
-- 기존 페이지 보강 우선
-- 성능 우선
-- 재사용 가능한 구조 우선
+- 湲곗〈 ?섏씠吏 蹂닿컯 ?곗꽑
+- ?깅뒫 ?곗꽑
+- ?ъ궗??媛?ν븳 援ъ“ ?곗꽑
 
-Blog는 Tool을 지원하기 위한 콘텐츠이다.
-
----
-
-# 6. SEO 전략
-
-우선순위
-
-1. 기존 페이지 보강
-2. Search Console 데이터 확인
-3. 신규 콘텐츠
-
-절대 검색량만 보고 키워드를 선택하지 않는다.
-
-선택 기준
-
-- 경쟁도
-- 검색 의도
-- 롱테일 여부
-- 내부링크 가능성
+Blog??Tool??吏?먰븯湲??꾪븳 肄섑뀗痢좎씠??
 
 ---
 
-# 7. 콘텐츠 생성 규칙
+# 6. SEO ?꾨왂
 
-신규 페이지 생성 전 반드시
+?곗꽑?쒖쐞
 
-1. 프로젝트 전체 중복 검사
-2. Search Console 확인
-3. 기존 페이지 보강 가능 여부 확인
-4. 웹 검색으로 경쟁도 조사
-5. 롱테일 키워드 조사
-6. 관련 Tool/Blog 연결 계획 수립
+1. 湲곗〈 ?섏씠吏 蹂닿컯
+2. Search Console ?곗씠???뺤씤
+3. ?좉퇋 肄섑뀗痢?
+
+?덈? 寃?됰웾留?蹂닿퀬 ?ㅼ썙?쒕? ?좏깮?섏? ?딅뒗??
+
+?좏깮 湲곗?
+
+- 寃쎌웳??
+- 寃???섎룄
+- 濡깊뀒???щ?
+- ?대?留곹겕 媛?μ꽦
 
 ---
 
-# 8. Tool 페이지
+# 7. 肄섑뀗痢??앹꽦 洹쒖튃
 
-필수
+?좉퇋 ?섏씠吏 ?앹꽦 ??諛섎뱶??
+
+1. ?꾨줈?앺듃 ?꾩껜 以묐났 寃??
+2. Search Console ?뺤씤
+3. 湲곗〈 ?섏씠吏 蹂닿컯 媛???щ? ?뺤씤
+4. ??寃?됱쑝濡?寃쎌웳??議곗궗
+5. 濡깊뀒???ㅼ썙??議곗궗
+6. 愿??Tool/Blog ?곌껐 怨꾪쉷 ?섎┰
+
+---
+
+# 8. Tool ?섏씠吏
+
+?꾩닔
 
 - Tool
-- 설명
-- 공식
-- 변수 설명
-- 사용 예시
+- ?ㅻ챸
+- 怨듭떇
+- 蹂???ㅻ챸
+- ?ъ슜 ?덉떆
 - FAQ
 - Related Tool
 - Related Blog
@@ -135,133 +135,133 @@ Blog는 Tool을 지원하기 위한 콘텐츠이다.
 
 # 9. Blog
 
-모든 Blog는 최소 1개 이상의 Tool과 연결.
+紐⑤뱺 Blog??理쒖냼 1媛??댁긽??Tool怨??곌껐.
 
-단순 정보글 금지.
+?⑥닚 ?뺣낫湲 湲덉?.
 
 ---
 
 # 10. Compare
 
-반드시 비교표 포함.
+諛섎뱶??鍮꾧탳???ы븿.
 
-양쪽 Tool 연결.
+?묒そ Tool ?곌껐.
 
 ---
 
 # 11. Reference
 
-- 공식
-- 단위
+- 怨듭떇
+- ?⑥쐞
 - Lookup
-- 표
-- 규격
+- ??
+- 洹쒓꺽
 
 ---
 
-# 12. 최신순
+# 12. 理쒖떊??
 
-모든 페이지
+紐⑤뱺 ?섏씠吏
 
 created_date
 updated_date
 
-홈 최신 목록은 updated_date DESC
+??理쒖떊 紐⑸줉? updated_date DESC
 
-신규 + 수정 모두 최신에 노출.
-
----
-
-# 13. 내부링크
-
-Tool → Blog
-Blog → Tool
-Compare → Tool
-Reference → Tool
-
-고립 페이지 금지.
+?좉퇋 + ?섏젙 紐⑤몢 理쒖떊???몄텧.
 
 ---
 
-# 14. Search Console 운영
+# 13. ?대?留곹겕
 
-매 작업 시작 시
+Tool ??Blog
+Blog ??Tool
+Compare ??Tool
+Reference ??Tool
 
-- 신규 색인 문제 확인
-- CTR 낮은 페이지 확인
-- 노출 높고 클릭 낮은 페이지 보강
-- 크롤링 오류 확인
+怨좊┰ ?섏씠吏 湲덉?.
 
 ---
 
-# 15. Google Analytics 운영
+# 14. Search Console ?댁쁺
 
-매 작업 시작 시
+留??묒뾽 ?쒖옉 ??
 
-- 인기 페이지
-- 체류시간
-- 유입 경로
-- 이탈률
+- ?좉퇋 ?됱씤 臾몄젣 ?뺤씤
+- CTR ??? ?섏씠吏 ?뺤씤
+- ?몄텧 ?믨퀬 ?대┃ ??? ?섏씠吏 蹂닿컯
+- ?щ·留??ㅻ쪟 ?뺤씤
 
-확인 후 보강 우선순위 결정.
+---
+
+# 15. Google Analytics ?댁쁺
+
+留??묒뾽 ?쒖옉 ??
+
+- ?멸린 ?섏씠吏
+- 泥대쪟?쒓컙
+- ?좎엯 寃쎈줈
+- ?댄깉瑜?
+
+?뺤씤 ??蹂닿컯 ?곗꽑?쒖쐞 寃곗젙.
 
 ---
 
 # 16. Sitemap
 
-새 페이지 추가 또는 URL 변경 시
+???섏씠吏 異붽? ?먮뒗 URL 蹂寃???
 
-- sitemap.xml 갱신
-- Search Console 제출
+- sitemap.xml 媛깆떊
+- Search Console ?쒖텧
 
 ---
 
 # 17. robots.txt
 
-robots와 sitemap 일치 여부 확인.
+robots? sitemap ?쇱튂 ?щ? ?뺤씤.
 
 ---
 
-# 18. 성능
+# 18. ?깅뒫
 
-목표
+紐⑺몴
 
 - Lighthouse 95+
-- CLS 최소
-- JS 최소화
+- CLS 理쒖냼
+- JS 理쒖냼??
 - Lazy Load
 - WebP
 
 ---
 
-# 19. 금지
+# 19. 湲덉?
 
-- AI 티 나는 글
-- 중복 콘텐츠
-- 키워드 남발
-- 추측 공식
-- 중복 코드
-- 기존 URL 변경
+- AI ???섎뒗 湲
+- 以묐났 肄섑뀗痢?
+- ?ㅼ썙???⑤컻
+- 異붿륫 怨듭떇
+- 以묐났 肄붾뱶
+- 湲곗〈 URL 蹂寃?
 
 ---
 
-# 20. 작업 종료 체크리스트
+# 20. ?묒뾽 醫낅즺 泥댄겕由ъ뒪??
 
-- GA4 확인
-- 내부링크 확인
-- Meta 확인
-- Canonical 확인
-- Sitemap 확인
-- Search Console 영향 검토
+- GA4 ?뺤씤
+- ?대?留곹겕 ?뺤씤
+- Meta ?뺤씤
+- Canonical ?뺤씤
+- Sitemap ?뺤씤
+- Search Console ?곹뼢 寃??
 - Commit
 - Push
 
 ---
 
-# 21. 변경 기록
+# 21. 蹂寃?湲곕줉
 
-모든 구조 변경은 아래에 날짜와 이유를 추가한다.
-삭제 금지.
+紐⑤뱺 援ъ“ 蹂寃쎌? ?꾨옒???좎쭨? ?댁쑀瑜?異붽??쒕떎.
+??젣 湲덉?.
 
 ## 2026-07-16
 
@@ -392,7 +392,7 @@ robots와 sitemap 일치 여부 확인.
 
 ## 2026-07-16
 
-- Replaced the area-rate Load Calculator with an input-transparent component aggregator. It supports US customary and SI geometry/temperature/airflow input conversion, sums documented envelope, solar, people, lighting, equipment, and outdoor-air sensible components, and reports cooling/heating BTU/h, tons, kW, and a supply-air-ΔT-based sensible CFM estimate.
+- Replaced the area-rate Load Calculator with an input-transparent component aggregator. It supports US customary and SI geometry/temperature/airflow input conversion, sums documented envelope, solar, people, lighting, equipment, and outdoor-air sensible components, and reports cooling/heating BTU/h, tons, kW, and a supply-air-?T-based sensible CFM estimate.
 - Added Copy and Print controls, validation/ranges, and explicit limitations. Cooling and Heating standalone URLs now noindex-canonicalize to the unified calculator and were removed from the sitemap.
 
 ## 2026-07-16
@@ -402,7 +402,7 @@ robots와 sitemap 일치 여부 확인.
 
 ## 2026-07-16
 
-- Site-wide audit identified two exact Tool duplicates: Airflow Calculator duplicated the CFM Calculator (room dimensions + ACH → CFM), and Round Duct Size Calculator duplicated Duct Size Calculator (CFM + velocity → round diameter). Both legacy URLs now noindex-canonicalize to the stronger page and are excluded from the sitemap.
+- Site-wide audit identified two exact Tool duplicates: Airflow Calculator duplicated the CFM Calculator (room dimensions + ACH ??CFM), and Round Duct Size Calculator duplicated Duct Size Calculator (CFM + velocity ??round diameter). Both legacy URLs now noindex-canonicalize to the stronger page and are excluded from the sitemap.
 - Retained related but distinct tools where search intent/inputs differ: ACH, room airflow, CFM per area, rectangular duct sizing, equivalent diameter, velocity, and friction loss.
 
 ## 2026-07-16
@@ -438,7 +438,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-16
 
 - Began BTU-cluster substantive reinforcement. Rebuilt the BTU Formula guide, BTU/h-versus-refrigeration-tons comparison, and BTU Conversion Reference with correct visible multiplication/division notation, energy-versus-rate distinctions, worked examples, use limits, FAQs, and connected Load/BTU tool paths.
-- The revised conversion reference uses NIST’s Btu definition and directs users to a documented load calculation before equipment selection; it does not equate thermal kW to electrical input.
+- The revised conversion reference uses NIST?셲 Btu definition and directs users to a documented load calculation before equipment selection; it does not equate thermal kW to electrical input.
 
 ## 2026-07-16
 
@@ -450,7 +450,7 @@ robots와 sitemap 일치 여부 확인.
 
 ## 2026-07-16
 
-- Continued Airflow reinforcement with expanded CFM calculation and ACH guides plus a CFM-versus-m³/h comparison. The content now uses consistent unit notation, demonstrates the volume conversions, separates airflow labels from ventilation claims, and directs duct decisions to area/velocity/friction review.
+- Continued Airflow reinforcement with expanded CFM calculation and ACH guides plus a CFM-versus-m쨀/h comparison. The content now uses consistent unit notation, demonstrates the volume conversions, separates airflow labels from ventilation claims, and directs duct decisions to area/velocity/friction review.
 
 ## 2026-07-16
 
@@ -458,7 +458,7 @@ robots와 sitemap 일치 여부 확인.
 
 ## 2026-07-16
 
-- Consolidated the thin “Recommended Air Changes per Hour Table.” It had no defensible universal data table and duplicated the maintained ACH guide, so its legacy URL is now a noindex canonical redirect to the guide and is removed from the sitemap and Reference hub. Existing legacy links remain safe through the redirect pending their targeted Tool-page refresh.
+- Consolidated the thin ?쏳ecommended Air Changes per Hour Table.??It had no defensible universal data table and duplicated the maintained ACH guide, so its legacy URL is now a noindex canonical redirect to the guide and is removed from the sitemap and Reference hub. Existing legacy links remain safe through the redirect pending their targeted Tool-page refresh.
 
 ## 2026-07-16
 
@@ -474,7 +474,7 @@ robots와 sitemap 일치 여부 확인.
 
 ## 2026-07-16
 
-- Completed the remaining Duct editorial pass: expanded Low-versus-High Velocity and Equivalent Round Diameter resources with formula scope, examples, and full-path limits. Consolidated the unsupported “Recommended Duct Velocity Table” into the maintained velocity guide; its legacy URL is a noindex canonical redirect and is removed from the sitemap.
+- Completed the remaining Duct editorial pass: expanded Low-versus-High Velocity and Equivalent Round Diameter resources with formula scope, examples, and full-path limits. Consolidated the unsupported ?쏳ecommended Duct Velocity Table??into the maintained velocity guide; its legacy URL is a noindex canonical redirect and is removed from the sitemap.
 
 ## 2026-07-16
 
@@ -680,3 +680,9 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Completed Psychrometrics Cluster phase 1 at a safe consolidated scope: the maintained Psychrometric Calculator provides the requested RH/Dew Point/Humidity Ratio/Moist-Air Enthalpy/Wet-Bulb intent as related properties of one documented air state. Dedicated duplicate URLs and editorial pages are deferred. Added Cooling Load to Psychrometrics workflow linking.
+
+## 2026-07-20
+
+- Completed Psychrometrics content phase 2 without fragmenting the integrated calculator: added the substantive `HVAC Psychrometrics Explained` guide and `Psychrometric Properties Reference` for variable definitions, IP/SI units, calculation conditions, workflow links, and source context.
+- Did not create standalone Relative Humidity, Dew Point, Humidity Ratio, or Wet/Dry Bulb pages, nor overlapping Dew Point/Wet Bulb reference tables: their shared air-state intent is covered as labeled sections of the guide and reference and calculated together by the maintained Psychrometric Calculator.
+- Added the two active canonical URLs to the Guides/Reference hubs, sitemap, llms.txt, and the calculator's related-resource list.
