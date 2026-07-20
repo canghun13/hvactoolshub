@@ -603,3 +603,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the maintained ACH guide with an identified-air-stream workflow, consistent US/SI formula notation, a checked room-volume example, explicit limitations, and maintained ACH/CFM/Reference/Duct links. The retired unsupported ACH-table URL is no longer linked.
+
+## 2026-07-20
+
+- Rebuilt the Duct Velocity guide with corrected units, explicit area-to-velocity example, full pressure-path decision sequence, updated dates/schema, and maintained friction-reference links. The consolidated noindex duct-velocity-table URL is no longer linked.
