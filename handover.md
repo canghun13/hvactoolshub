@@ -511,3 +511,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Began the Airflow tool pass by correcting shared result-unit labels in `assets/js/airflow.js`. The seven Airflow calculator modes now use encoding-safe `CFM per sq ft` and `m3/h` result text while retaining their existing validated formulas and reset behavior.
+
+## 2026-07-20
+
+- Rebuilt the ACH Calculator around its actual purpose: calculating a volume-flow ratio from an identified CFM stream and room volume. The page now uses positive input bounds, corrected unit/formula notation, explains supply/outdoor/exhaust/recirculation distinctions, replaces its retired reference link, and provides maintained CFM, guide, comparison, and reference paths.
