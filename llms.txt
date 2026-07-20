@@ -70,6 +70,11 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
 - https://hvactoolshub.com/blog/how-to-calculate-hvac-load.html
   - Explains the inputs and sequence for a preliminary HVAC load review.
 
+- https://hvactoolshub.com/blog/superheat-vs-subcooling-explained.html
+  - Explains the separate matched saturation-temperature differences used for superheat and subcooling.
+- https://hvactoolshub.com/blog/how-to-calculate-refrigeration-capacity.html
+  - Explains refrigerant-side capacity from a documented mass-flow and enthalpy-difference boundary.
+
 ## Comparisons
 
 - https://hvactoolshub.com/compare/btu-vs-hvac-tons.html
@@ -95,6 +100,9 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
   - Provides round-duct area lookup values for preliminary velocity checks.
 - https://hvactoolshub.com/reference/duct-friction-rate-reference.html
   - Defines straight-duct friction-rate inputs, units, formula, and limits.
+
+- https://hvactoolshub.com/reference/refrigeration-units-reference.html
+  - Provides capacity, mass-flow, enthalpy, and temperature-difference unit relationships for refrigeration checks.
 
 ## Site Information
 

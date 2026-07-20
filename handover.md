@@ -668,3 +668,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Fixed a production error in the Refrigeration Capacity Calculator: its dynamic formula label sits outside the form, so querying it from the form produced a null 	extContent error before any calculation could run. The shared refrigeration script now resolves that page-level label from the document; capacity, superheat, and subcooling form behavior remains isolated.
+
+## 2026-07-20
+
+- Expanded Refrigeration content with two intent-specific Guides (matched-point Superheat versus Subcooling and refrigerant-side capacity from mass flow and enthalpy difference) plus a Refrigeration Units and Measurement Reference. The Ton-of-Refrigeration guide and separate Ton Conversion Reference were not created because the maintained What Is BTU, BTU/h-versus-Tons comparison, and BTU Conversion Reference already satisfy that intent. Added active URLs to the Guides/Reference hubs, sitemap, llms.txt, and related refrigeration tool paths.
