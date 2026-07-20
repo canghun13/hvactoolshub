@@ -696,3 +696,8 @@ robots? sitemap ?쇱튂 ?щ? ?뺤씤.
 - Added created/updated date metadata to Home and the four directory hubs. `robots.txt` permits crawling and points to the canonical sitemap. `llms.txt` remains a concise core index by rule; it intentionally does not mirror every sitemap URL.
 - Current deferrals: no new large cluster is started by this QA pass; advanced psychrometric charting and refrigerant property/pressure-temperature data remain outside the current planning-tool scope. Recommended next cluster is electrical efficiency and equipment operating-cost context, subject to separate intent/source review.
 - AdSense work is deferred. Directory registrations are planned for late August. For every future maintained-page creation, deletion, or consolidation, update `sitemap.xml` and `llms.txt` together, then reconcile the relevant directory hub.
+
+## 2026-07-20
+
+- Refined only the Psychrometric Calculator result UI: it now presents an initially guided, post-calculation result card with aligned labels, emphasized values, and adjacent units. SI reports degrees C, g/kg dry air, and kJ/kg dry air; IP reports degrees F, grains/lb dry air, and Btu/lb dry air.
+- The psychrometric relationships and input limits remain unchanged. Reset returns the result card to its guided empty state. Copy now uses the marked result card when present, preserving the complete label/value/unit result set; Print remains available through the shared tool control.
