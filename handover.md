@@ -567,3 +567,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the Tools hub around maintained user flows rather than legacy URL count. It now surfaces the active Load, BTU, Airflow, and Duct calculators by purpose, including recently strengthened area, velocity, equivalent-diameter, and friction tools; consolidated noindex URLs are not listed.
+
+## 2026-07-20
+
+- Rebuilt the Guides hub around maintained load-to-capacity and airflow-to-duct learning paths. It now exposes the strengthened BTU, Airflow, and Duct guides alongside Load content, uses only maintained URLs, and preserves the shared directory design.
