@@ -701,3 +701,4 @@ robots? sitemap ?쇱튂 ?щ? ?뺤씤.
 
 - Refined only the Psychrometric Calculator result UI: it now presents an initially guided, post-calculation result card with aligned labels, emphasized values, and adjacent units. SI reports degrees C, g/kg dry air, and kJ/kg dry air; IP reports degrees F, grains/lb dry air, and Btu/lb dry air.
 - The psychrometric relationships and input limits remain unchanged. Reset returns the result card to its guided empty state. Copy now uses the marked result card when present, preserving the complete label/value/unit result set; Print remains available through the shared tool control.
+- Switching between SI and IP now converts the entered dry-bulb temperature and total pressure before clearing the panel, preventing an unchanged SI input from being interpreted as an invalid IP state.
