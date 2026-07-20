@@ -660,3 +660,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Reconciled all four directory hubs against active canonical sitemap URLs. Tools now surface the three previously omitted maintained converters/checks; Guides now surface the eleven previously omitted maintained articles in coherent Load, Airflow, BTU, and Duct paths. Compare and Reference already matched their active sitemap inventories, so no cards were added there.
+
+## 2026-07-20
+
+- Refrigeration phase 2 verification retained the three phase-1 tools without new duplicate URLs. Verified the documented US/SI capacity relationships, matched-point temperature-difference logic, positive/invalid input handling, reset behavior, shared Copy/Print enhancement, source injection, responsive result grid, and FAQ scope. Strengthened the maintained workflow links: HVAC Load to Refrigeration Capacity, Capacity to both ton converters, and both ton converters back to Refrigeration Capacity. Deferred new Refrigeration Guides and References to avoid adding pages without a separate completed quality pass in the remaining session.
