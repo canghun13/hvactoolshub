@@ -11,6 +11,15 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
 - https://hvactoolshub.com/tool/tons-to-btu-calculator.html
   - Converts nominal refrigeration tons to BTU/h capacity.
 
+## Refrigeration Tools
+
+- https://hvactoolshub.com/tool/refrigeration-capacity-calculator.html
+  - Calculates refrigerant-side thermal capacity from documented mass flow and evaporator enthalpy difference.
+- https://hvactoolshub.com/tool/refrigerant-superheat-calculator.html
+  - Calculates a matched suction-line temperature difference above saturation without generating refrigerant property data.
+- https://hvactoolshub.com/tool/refrigerant-subcooling-calculator.html
+  - Calculates a matched liquid-line temperature difference below saturation without supplying a charging target.
+
 ## Airflow Tools
 
 - https://hvactoolshub.com/tool/cfm-calculator.html

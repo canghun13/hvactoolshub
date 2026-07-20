@@ -651,3 +651,8 @@ robots와 sitemap 일치 여부 확인.
 - Improved Compare and Reference hub scanability: every category heading now has a concise explanatory paragraph and consistent spacing before its card grid, matching the information hierarchy used by the Tools and Guides hubs.
 
 - Aligned Compare and Reference hub category markup with Tools and Guides: each section now uses the shared home-section-heading wrapper, an eyebrow label, H2, and supporting description.
+
+## 2026-07-20
+
+- Began Refrigeration Tool Cluster phase 1 with three distinct maintained tools: refrigerant-side capacity from documented mass flow and enthalpy difference, matched-point superheat, and matched-point subcooling. The tools do not generate refrigerant pressure-temperature or enthalpy data and do not provide service targets.
+- Did not create Refrigeration Ton, BTU/h-to-Tons, or standalone Temperature Difference URLs: the first two duplicate the maintained BTU conversion tools, and the last duplicates the temperature-difference math already contextualized in the Superheat and Subcooling tools. Added the three maintained URLs to Tools, Home, sitemap, and llms.txt.
