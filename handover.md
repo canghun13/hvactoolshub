@@ -519,3 +519,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Consolidated `room-airflow-calculator.html` into the maintained CFM Calculator after confirming the two tools had identical inputs (length, width, height, ACH), formula, and CFM output. The legacy URL remains a noindex canonical redirect and was removed from the sitemap; internal-link cleanup continues in the relevant page refreshes.
+
+## 2026-07-20
+
+- Rebuilt the maintained CFM-per-square-foot tool as an airflow normalization check. It now uses positive inputs, clear air-stream and area-boundary guidance, corrected units/formula notation, ratio limits, maintained CFM/ACH/Load paths, and avoids presenting an area ratio as a universal design target.
