@@ -575,3 +575,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the BTU/h versus HVAC Tons comparison with corrected dates, arrows, quotation text, and capacity-label explanations. It retains the comparison table and conversion workflow while reinforcing that thermal capacity conversion is not a load calculation, electrical-input rating, or equipment-selection approval.
+
+## 2026-07-20
+
+- Rebuilt the BTU Conversion Reference with corrected dates, source text, ownership grammar, and thermal-capacity wording. The reference retains verified conversion relationships, lookup rows, formulas, an electrical-input warning, and NIST/DOE source context.
