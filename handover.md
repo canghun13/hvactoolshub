@@ -656,3 +656,7 @@ robots와 sitemap 일치 여부 확인.
 
 - Began Refrigeration Tool Cluster phase 1 with three distinct maintained tools: refrigerant-side capacity from documented mass flow and enthalpy difference, matched-point superheat, and matched-point subcooling. The tools do not generate refrigerant pressure-temperature or enthalpy data and do not provide service targets.
 - Did not create Refrigeration Ton, BTU/h-to-Tons, or standalone Temperature Difference URLs: the first two duplicate the maintained BTU conversion tools, and the last duplicates the temperature-difference math already contextualized in the Superheat and Subcooling tools. Added the three maintained URLs to Tools, Home, sitemap, and llms.txt.
+
+## 2026-07-20
+
+- Reconciled all four directory hubs against active canonical sitemap URLs. Tools now surface the three previously omitted maintained converters/checks; Guides now surface the eleven previously omitted maintained articles in coherent Load, Airflow, BTU, and Duct paths. Compare and Reference already matched their active sitemap inventories, so no cards were added there.
