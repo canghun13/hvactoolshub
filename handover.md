@@ -591,3 +591,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the Compare hub using maintained URLs only. Its capacity, airflow, duct, and next-tool paths now surface every maintained comparison, including previously undiscoverable BTU/kW, metric-airflow, flexible/rigid, and low/high-velocity comparisons.
+
+## 2026-07-20
+
+- Rebuilt the Reference hub using maintained references and intentional next-step tools only. Capacity, airflow, duct-geometry/friction, and Load paths now disclose lookup limits and surface the maintained duct-friction reference that had been omitted from hub discovery.
