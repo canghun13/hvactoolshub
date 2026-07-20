@@ -547,3 +547,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Expanded the Duct Cross-Sectional Area Calculator with working round and rectangular modes already supported by the shared script. The page now uses inside dimensions, positive validation, corrected area notation, and a clear area-to-velocity workflow without treating face area as a pressure-loss or distribution result.
+
+## 2026-07-20
+
+- Rebuilt the Duct Friction Loss Calculator around its transparent Darcy-Weisbach scope: straight round duct only with user-supplied density and Darcy friction factor. Corrected notation, positive inputs, variable explanations, and complete-path limits now prevent the result from being presented as total static pressure or a universal friction-rate rule.
