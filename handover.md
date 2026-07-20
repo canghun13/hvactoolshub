@@ -607,3 +607,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the Duct Velocity guide with corrected units, explicit area-to-velocity example, full pressure-path decision sequence, updated dates/schema, and maintained friction-reference links. The consolidated noindex duct-velocity-table URL is no longer linked.
+
+## 2026-07-20
+
+- Replaced the maintained BTU calculation guide's consolidated Load Reference link with the maintained How to Calculate HVAC Load guide.
