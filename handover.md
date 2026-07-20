@@ -503,3 +503,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Expanded the direction-specific BTU-to-tons and tons-to-BTU tools while retaining both distinct conversion intents. Both now use valid positive input bounds, corrected formula notation, updated metadata, result interpretation, unit tables, worked examples, and explicit load-before-equipment-selection guidance.
+
+## 2026-07-20
+
+- Rebuilt the area-based BTU tools to prevent a ratio or chosen planning rate from being presented as final sizing. `btu-per-square-foot-calculator.html` now frames its output as a comparison metric, while `room-btu-calculator.html` requires a documented rate and directs users to the component-based Load Calculator. Both pages now use corrected unit notation, positive input bounds, expanded scope limits, and maintained workflow links.
