@@ -595,3 +595,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the Reference hub using maintained references and intentional next-step tools only. Capacity, airflow, duct-geometry/friction, and Load paths now disclose lookup limits and surface the maintained duct-friction reference that had been omitted from hub discovery.
+
+## 2026-07-20
+
+- Rebuilt the maintained Duct Friction Rate Reference with explicit straight-section inputs, formula variables, use sequence, and total-system limits. It now links to the maintained velocity guide rather than the consolidated noindex velocity-table URL. The legacy Room Cooling Load redirect now points directly to the unified HVAC Load Calculator instead of a second redirect.
