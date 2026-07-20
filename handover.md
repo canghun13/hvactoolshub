@@ -551,3 +551,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the Duct Friction Loss Calculator around its transparent Darcy-Weisbach scope: straight round duct only with user-supplied density and Darcy friction factor. Corrected notation, positive inputs, variable explanations, and complete-path limits now prevent the result from being presented as total static pressure or a universal friction-rate rule.
+
+## 2026-07-20
+
+- Rebuilt the home-page markup without changing the visual system: corrected malformed arrow spans, removed the Room Airflow card that pointed to the consolidated noindex URL, and refreshed Latest cards using the actual 2026-07-20 updated tool pages. Duct and Load discovery sections remain intact.
