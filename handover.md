@@ -635,3 +635,13 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Added static JSON-LD to the six sitemap pages previously relying on runtime fallback schema: Home, Tools, Guides, the Load Mistakes guide, Cooling-versus-Heating Load, and Residential-versus-Commercial Load. Each now exposes an appropriate WebSite, CollectionPage, or Article object in its initial HTML.
+
+## llms.txt maintenance
+
+- Keep `/llms.txt` at the project root as a concise Markdown index for language-model readers.
+- When a maintained page is created, consolidated, or deleted, update `llms.txt` in the same change.
+- Include only active canonical URLs with distinct value; never add noindex redirects, keyword lists, advertising copy, or a full page dump.
+
+## 2026-07-20
+
+- Added root `llms.txt` as a concise index of active core calculators, Airflow, Duct, Load, Guide, Comparison, Reference, and site-information URLs. It intentionally excludes noindex redirects and `llms-full.txt`.

@@ -1,0 +1,99 @@
+# HVAC Tools Hub
+
+HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airflow, duct geometry, and preliminary load-planning questions. It helps homeowners, technicians, students, and HVAC professionals check transparent unit conversions and early calculations; it does not replace project-specific design methods, applicable codes, or qualified professional review.
+
+## Core Calculators
+
+- https://hvactoolshub.com/tool/btu-calculator.html
+  - Converts thermal capacity between BTU/h, watts, kilowatts, and refrigeration tons.
+- https://hvactoolshub.com/tool/btu-to-tons-calculator.html
+  - Converts a BTU/h capacity value to nominal refrigeration tons.
+- https://hvactoolshub.com/tool/tons-to-btu-calculator.html
+  - Converts nominal refrigeration tons to BTU/h capacity.
+
+## Airflow Tools
+
+- https://hvactoolshub.com/tool/cfm-calculator.html
+  - Converts room dimensions and a documented ACH basis into CFM.
+- https://hvactoolshub.com/tool/air-changes-per-hour-calculator.html
+  - Converts identified CFM and room volume into air changes per hour.
+- https://hvactoolshub.com/tool/cfm-per-square-foot-calculator.html
+  - Calculates an airflow-to-area ratio for a stated airflow and area boundary.
+- https://hvactoolshub.com/tool/cfm-to-cubic-meters-per-hour.html
+  - Converts CFM to cubic metres per hour.
+- https://hvactoolshub.com/tool/cubic-meters-per-hour-to-cfm.html
+  - Converts cubic metres per hour to CFM.
+
+## Duct Tools
+
+- https://hvactoolshub.com/tool/duct-size-calculator.html
+  - Calculates a theoretical round duct diameter from assigned CFM and target velocity.
+- https://hvactoolshub.com/tool/rectangular-duct-size-calculator.html
+  - Calculates preliminary rectangular duct dimensions from airflow, velocity, and aspect ratio.
+- https://hvactoolshub.com/tool/equivalent-duct-diameter-calculator.html
+  - Estimates equal-friction round diameter from rectangular duct dimensions.
+- https://hvactoolshub.com/tool/duct-velocity-calculator.html
+  - Calculates velocity for round or rectangular duct geometry.
+- https://hvactoolshub.com/tool/duct-friction-loss-calculator.html
+  - Calculates a transparent straight-round-duct Darcy-Weisbach pressure-loss estimate.
+
+## Load Calculation Tools
+
+- https://hvactoolshub.com/tool/hvac-load-calculator.html
+  - Aggregates documented preliminary envelope, solar, internal, and outdoor-air sensible load components.
+- https://hvactoolshub.com/tool/room-btu-calculator.html
+  - Calculates a room planning capacity from area and an explicit planning rate.
+- https://hvactoolshub.com/tool/btu-per-square-foot-calculator.html
+  - Calculates a thermal-capacity-to-area comparison metric.
+
+## Guides
+
+- https://hvactoolshub.com/blog/what-is-btu.html
+  - Explains BTU energy, BTU/h capacity, and common HVAC capacity labels.
+- https://hvactoolshub.com/blog/how-to-calculate-btu.html
+  - Describes a transparent preliminary BTU/h load workflow and its limits.
+- https://hvactoolshub.com/blog/what-is-cfm-in-hvac.html
+  - Explains CFM and the HVAC air streams it can describe.
+- https://hvactoolshub.com/blog/air-changes-per-hour-explained.html
+  - Explains ACH as an airflow-to-room-volume relationship.
+- https://hvactoolshub.com/blog/how-to-size-hvac-ductwork.html
+  - Describes the airflow-to-area-to-velocity duct-sizing workflow.
+- https://hvactoolshub.com/blog/how-to-calculate-hvac-load.html
+  - Explains the inputs and sequence for a preliminary HVAC load review.
+
+## Comparisons
+
+- https://hvactoolshub.com/compare/btu-vs-hvac-tons.html
+  - Compares BTU/h and refrigeration tons as thermal-capacity labels.
+- https://hvactoolshub.com/compare/btu-vs-kw.html
+  - Compares BTU/h and thermal kW while separating electrical input.
+- https://hvactoolshub.com/compare/cfm-vs-air-changes-per-hour.html
+  - Compares a stated volume flow with its room-volume-normalized ACH value.
+- https://hvactoolshub.com/compare/round-duct-vs-rectangular-duct.html
+  - Compares round and rectangular duct geometry, routing, and pressure-path considerations.
+- https://hvactoolshub.com/compare/manual-j-vs-rule-of-thumb-hvac-sizing.html
+  - Compares a screening estimate with a formal residential load method.
+
+## Reference Data
+
+- https://hvactoolshub.com/reference/btu-conversion-reference.html
+  - Provides BTU, thermal watt, thermal kW, and refrigeration-ton conversion relationships.
+- https://hvactoolshub.com/reference/cfm-conversion-chart.html
+  - Provides CFM and cubic-metres-per-hour conversion rows.
+- https://hvactoolshub.com/reference/hvac-airflow-reference-table.html
+  - Provides airflow, ACH, room-volume, and metric conversion formulas.
+- https://hvactoolshub.com/reference/hvac-duct-size-chart.html
+  - Provides round-duct area lookup values for preliminary velocity checks.
+- https://hvactoolshub.com/reference/duct-friction-rate-reference.html
+  - Defines straight-duct friction-rate inputs, units, formula, and limits.
+
+## Site Information
+
+- https://hvactoolshub.com/about/
+  - Explains the site purpose, content types, and professional-review boundary.
+- https://hvactoolshub.com/contact/
+  - Provides the site contact guidance and issue-reporting categories.
+- https://hvactoolshub.com/privacy/
+  - Explains the current Google Analytics and privacy approach.
+- https://hvactoolshub.com/disclaimer/
+  - States the planning-only limits of site tools and content.
