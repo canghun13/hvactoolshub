@@ -535,3 +535,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Expanded the distinct Rectangular Duct Size Calculator with corrected formula notation, positive inputs, transparent area/ratio dimensions, and equal-area versus equal-resistance limits. It now sends users to equivalent-diameter and friction checks rather than treating an aspect-ratio result as final design.
+
+## 2026-07-20
+
+- Expanded the Equivalent Duct Diameter Calculator around its actual Huebscher equal-friction scope. It now has corrected notation, positive inputs, explicit non-equivalence of area/velocity/fittings, and linked rectangular-geometry and friction checks instead of presenting the result as a direct duct substitution.
