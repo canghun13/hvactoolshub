@@ -627,3 +627,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Versioned the shared stylesheet URL across all 66 HTML pages (`style.css?v=20260720-mobilefix`) to force clients and CDN layers to request the responsive-overflow fix rather than reuse a stale CSS asset.
+
+## 2026-07-20
+
+- Removed one empty `<url>` node discovered during the final sitemap/robots validation. The sitemap now contains maintained URLs only.
