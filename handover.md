@@ -599,3 +599,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Rebuilt the maintained Duct Friction Rate Reference with explicit straight-section inputs, formula variables, use sequence, and total-system limits. It now links to the maintained velocity guide rather than the consolidated noindex velocity-table URL. The legacy Room Cooling Load redirect now points directly to the unified HVAC Load Calculator instead of a second redirect.
+
+## 2026-07-20
+
+- Rebuilt the maintained ACH guide with an identified-air-stream workflow, consistent US/SI formula notation, a checked room-volume example, explicit limitations, and maintained ACH/CFM/Reference/Duct links. The retired unsupported ACH-table URL is no longer linked.
