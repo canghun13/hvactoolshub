@@ -495,3 +495,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Expanded the remaining core BTU guides, `what-is-btu.html` and `how-to-calculate-btu.html`, with an explicit energy-versus-rate distinction, thermal-versus-electrical-label limits, conversion tables, a transparent component-load example, formulas, and the load-to-airflow-to-duct workflow. The guides retain their existing URLs and now direct sizing decisions to the maintained preliminary Load Calculator rather than an area-only rule.
+
+## 2026-07-20
+
+- Aligned the central BTU Converter validation with the audited cluster behavior: empty, zero, negative, and non-numeric entries now clear all stale outputs and require a value greater than zero. The next content pass will update its legacy related-guide link to the maintained BTU Formula guide.
