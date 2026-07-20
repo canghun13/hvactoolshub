@@ -559,3 +559,7 @@ robots와 sitemap 일치 여부 확인.
 ## 2026-07-20
 
 - Began the Load Calculator active-result pass. Shared `load.js` now clears stale output for invalid values, recalculates on input/unit changes, guards Copy before a result exists, and uses encoding-safe thermal-capacity, delta-temperature, and volume result text. The documented component aggregation and conversions remain unchanged.
+
+## 2026-07-20
+
+- Rebuilt the HVAC Load Calculator page UI around the maintained component aggregator. Input labels, unit selector, dates, schema, scope, formulas, limits, FAQ, and workflow links now use encoding-safe text and match the active calculation behavior. The page continues to distinguish preliminary planning from Manual J, detailed load methods, and final equipment design.
