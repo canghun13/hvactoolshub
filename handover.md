@@ -714,5 +714,6 @@ robots? sitemap ?쇱튂 ?щ? ?뺤씤.
 - Rechecked maintained-page metadata, canonical URLs, GA4, H1, and core head tags with no missing-item findings. Existing page-specific source/scope sections remain the source mechanism; official NIST, ASHRAE, DOE, ACCA, Copeland, and Danfoss references remain prioritized.
 - Next recommended work: use real Search Console and analytics evidence to choose a focused content refresh; keep AdSense deferred and directory submissions planned for late August. For any future maintained-page create/delete/consolidation, update `sitemap.xml` and `llms.txt` together and reconcile the relevant directory hub.
 
-2026-07-29
+## 2026-07-29
+
 메인 페이지 푸터 아래의 디렉토리 뱃지 영역은 사용자가 직접 관리하는 영역이므로 수정·삭제·리팩터링하지 않는다.- https://kittylaunch.com에 등록 (내가 직접함)
