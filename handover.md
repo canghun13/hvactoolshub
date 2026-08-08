@@ -732,3 +732,15 @@ robots? sitemap ?쇱튂 ?щ? ?뺤씤.
 ## 2026-08-06
 
 메인 페이지 푸터 아래의 디렉토리 뱃지 영역은 사용자가 직접 관리하는 영역이므로 수정·삭제·리팩터링하지 않는다.- https://boostdomainrating.com/에 등록 (내가 직접함)
+
+## 2026-08-08
+
+- Starting state verified against `404c801d96a3af816d1beb93908d2e0d2b5d6bf0` on `origin/main`; the checked-out working tree was clean. The site's 71 active canonical URLs were audited through the sitemap and directory hubs. Existing maintained clusters cover BTU/capacity, airflow, duct design, load planning, refrigeration, and psychrometrics.
+- Research candidates considered: (1) Heat Pump Operating Cost / COP, (2) Fan Power, and (3) HVAC Electrical Service Load. Heat-pump operating cost had clear calculator-oriented search results, supports repeated scenario use, and was absent from the site. Fan power was rejected because it overlaps the existing airflow/duct pressure-path cluster and requires manufacturer fan curves for final selection. Electrical service load was rejected because code-specific demand factors and nameplate/circuit requirements make a generic HVAC-only tool unsafe and incomplete.
+- Added the focused Heat Pump Efficiency & Operating Cost cluster: `/tool/heat-pump-operating-cost-calculator.html`, `/blog/heat-pump-cop-and-operating-cost.html`, and `/reference/heat-pump-efficiency-ratings-reference.html`. No separate comparison URL was created because resistance-heat comparison is an output of the calculator and a standalone comparison would overlap the same query intent.
+- The calculator accepts a user-supplied thermal load, runtime, matched-condition COP, and electricity rate in US customary or SI form. It uses `electrical kWh = delivered thermal kWh / COP`; US customary load is converted using 3,412.141633 BTU per kWh. Heating mode also shows the explicit COP 1 electric-resistance scenario. It does not infer a COP, convert seasonal labels to point COP, size equipment, calculate circuit protection, or forecast annual bills.
+- Official-source basis: U.S. DOE definitions for COP, EER, and HSPF; U.S. DOE Heat Pump Systems guidance; and NIST Btu/hour-to-watt conversion factors. The reference explains that COP/EER conversion is valid only at a matching condition and that SEER2/HSPF2 remain seasonal rating metrics.
+- Added reciprocal internal discovery from the Tool, Guide, and Reference hubs; updated Home latest/heat-pump discovery and related-resource paths from the HVAC Load Calculator and BTU/h vs kW comparison. The user-managed footer-directory badge area was left unchanged.
+- Updated `sitemap.xml` with the three active canonical URLs and updated `llms.txt` with a concise Heat Pump Efficiency and Cost section.
+- Independent calculator check: 24,000 BTU/h for 8 hours = 192,000 BTU = 56.270 kWh thermal; at COP 3 this is 18.757 kWh and at 0.15 currency/kWh costs 2.813 currency. The COP 1 comparison is 56.270 kWh and 8.440 currency. SI cross-check: 7.0317 kW thermal for 8 hours at COP 3 yields 18.751 kWh (conversion rounding only).
+- QA pending final browser interaction and local link/schema/sitemap scan before commit and push.

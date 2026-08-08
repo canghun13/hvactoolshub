@@ -25,6 +25,15 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
 - https://hvactoolshub.com/tool/psychrometric-calculator.html
   - Calculates core moist-air properties from dry bulb, relative humidity, and total pressure.
 
+## Heat Pump Efficiency and Cost
+
+- https://hvactoolshub.com/tool/heat-pump-operating-cost-calculator.html
+  - Estimates electricity use and operating cost from a stated thermal load, runtime, COP, and electricity rate.
+- https://hvactoolshub.com/blog/heat-pump-cop-and-operating-cost.html
+  - Explains the matched-condition COP and operating-cost workflow without treating it as a seasonal forecast.
+- https://hvactoolshub.com/reference/heat-pump-efficiency-ratings-reference.html
+  - Defines COP, EER, SEER2, and HSPF2 and identifies their appropriate use limits.
+
 ## Airflow Tools
 
 - https://hvactoolshub.com/tool/cfm-calculator.html
