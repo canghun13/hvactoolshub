@@ -7,6 +7,7 @@
     if (element) element.value = Number.isFinite(value) ? format(value, digits) : '';
   };
   const clear = () => form.querySelectorAll('[data-result]').forEach(element => { element.value = ''; });
+  let previousUnit = form.elements.unit.value;
   const calculate = () => {
     const unit = form.elements.unit.value;
     const mode = form.elements.mode.value;
@@ -44,6 +45,16 @@
   };
   form.addEventListener('submit', event => { event.preventDefault(); calculate(); });
   form.addEventListener('reset', () => setTimeout(calculate, 0));
-  form.querySelectorAll('input,select').forEach(element => element.addEventListener(element.tagName === 'SELECT' ? 'change' : 'input', calculate));
+  form.querySelectorAll('input,select').forEach(element => element.addEventListener(element.tagName === 'SELECT' ? 'change' : 'input', () => {
+    if (element.name === 'unit') {
+      const nextUnit = form.elements.unit.value;
+      const load = Number(form.elements.load.value);
+      if (Number.isFinite(load) && load > 0 && nextUnit !== previousUnit) {
+        form.elements.load.value = nextUnit === 'si' ? (load * 0.0002930710702).toFixed(4) : (load / 0.0002930710702).toFixed(2);
+      }
+      previousUnit = nextUnit;
+    }
+    calculate();
+  }));
   calculate();
 })();
