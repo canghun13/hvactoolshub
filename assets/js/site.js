@@ -30,7 +30,10 @@
     addScript('/assets/js/source-polish.js');
   }
   if (document.querySelector('.static-page')) addStyle('/assets/css/site-pages.css');
-  if (document.querySelector('.calculator-card form')) addScript('/assets/js/tool-polish.js?v=20260720-psychro-ui');
+  if (document.querySelector('.calculator-card form')) {
+    addStyle('/assets/css/print-tools.css?v=20260813-print');
+    addScript('/assets/js/tool-polish.js?v=20260813-print');
+  }
   if (['/tool/', '/blog/', '/compare/', '/reference/'].includes(path)) {
     document.body.classList.add('directory-page');
     addStyle('/assets/css/directory.css');
