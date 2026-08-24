@@ -69,6 +69,17 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
 - https://hvactoolshub.com/tool/btu-per-square-foot-calculator.html
   - Calculates a thermal-capacity-to-area comparison metric.
 
+## Belt-Drive Fan Tools
+
+- https://hvactoolshub.com/tool/fan-pulley-rpm-calculator.html
+  - Calculates driven fan RPM, drive ratio, and belt speed from motor RPM and sheave pitch diameters.
+- https://hvactoolshub.com/tool/motor-sheave-size-calculator.html
+  - Calculates a target motor-sheave pitch diameter from motor speed, supported fan RPM, and driven-sheave diameter.
+- https://hvactoolshub.com/tool/v-belt-length-calculator.html
+  - Estimates open-drive V-belt pitch length and sheave wrap angles from pitch diameters and shaft spacing.
+- https://hvactoolshub.com/tool/fan-law-calculator.html
+  - Estimates same-fan airflow, pressure, and brake-power changes from a documented RPM change.
+
 ## Guides
 
 - https://hvactoolshub.com/blog/what-is-btu.html
@@ -83,6 +94,8 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
   - Describes the airflow-to-area-to-velocity duct-sizing workflow.
 - https://hvactoolshub.com/blog/how-to-calculate-hvac-load.html
   - Explains the inputs and sequence for a preliminary HVAC load review.
+- https://hvactoolshub.com/blog/hvac-fan-belt-and-sheave-workflow.html
+  - Explains the measured sequence from drive-speed verification through belt geometry, fan laws, and final field checks.
 
 - https://hvactoolshub.com/blog/superheat-vs-subcooling-explained.html
   - Explains the separate matched saturation-temperature differences used for superheat and subcooling.
@@ -117,6 +130,8 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
   - Provides round-duct area lookup values for preliminary velocity checks.
 - https://hvactoolshub.com/reference/duct-friction-rate-reference.html
   - Defines straight-duct friction-rate inputs, units, formula, and limits.
+- https://hvactoolshub.com/reference/fan-belt-and-sheave-formulas.html
+  - Provides fan-drive speed, sheave, belt-length, wrap-angle, belt-speed, and fan-law formulas with use limits.
 
 - https://hvactoolshub.com/reference/refrigeration-units-reference.html
   - Provides capacity, mass-flow, enthalpy, and temperature-difference unit relationships for refrigeration checks.

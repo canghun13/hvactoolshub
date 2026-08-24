@@ -75,18 +75,54 @@
     document.querySelector('main')?.append(section);
   }
 
+  const beltDriveClusters = {
+    '/tool/': {
+      eyebrow: 'Belt-drive fan service',
+      title: 'RPM, sheave, belt, and fan-law checks',
+      description: 'Move from measured drive geometry to fan-speed and performance consequences without skipping equipment limits.',
+      cards: '<a class="resource-card" href="/tool/fan-pulley-rpm-calculator.html"><span>FAN DRIVE</span><h3>Fan Pulley RPM</h3><p>Calculate driven fan RPM from motor speed and pitch diameters.</p></a><a class="resource-card" href="/tool/motor-sheave-size-calculator.html"><span>FAN DRIVE</span><h3>Motor Sheave Size</h3><p>Screen a driver pitch diameter for a supported target fan speed.</p></a><a class="resource-card" href="/tool/v-belt-length-calculator.html"><span>FAN DRIVE</span><h3>V-Belt Length</h3><p>Estimate open-drive pitch length and wrap angles.</p></a><a class="resource-card" href="/tool/fan-law-calculator.html"><span>FAN DRIVE</span><h3>Fan Law Calculator</h3><p>Estimate same-system airflow, pressure, and brake-power changes.</p></a>'
+    },
+    '/blog/': {
+      eyebrow: 'Belt-drive fan service',
+      title: 'Follow the complete sheave-adjustment workflow',
+      description: 'Connect current RPM, target drive geometry, belt selection, and motor-load consequences.',
+      cards: '<a class="resource-card" href="/blog/hvac-fan-belt-and-sheave-workflow.html"><span>FAN DRIVE</span><h3>Fan Belt and Sheave Workflow</h3><p>Use a measured sequence before and after a belt-drive adjustment.</p></a>'
+    },
+    '/reference/': {
+      eyebrow: 'Belt-drive fan service',
+      title: 'Fan-drive formulas and factors',
+      description: 'Reference speed ratio, pitch length, wrap angle, belt speed, and fan-law scaling.',
+      cards: '<a class="resource-card" href="/reference/fan-belt-and-sheave-formulas.html"><span>FAN DRIVE</span><h3>Fan Belt and Sheave Formulas</h3><p>Use field formulas with unit rules, examples, and manufacturer-data limits.</p></a>'
+    }
+  };
+  const beltDriveCluster = beltDriveClusters[path];
+  if (beltDriveCluster) {
+    const section = document.createElement('section');
+    section.className = 'section';
+    section.dataset.beltDriveCluster = '';
+    section.innerHTML = `<div class="container"><div class="home-section-heading"><div><p class="eyebrow">${beltDriveCluster.eyebrow}</p><h2>${beltDriveCluster.title}</h2></div><p>${beltDriveCluster.description}</p></div><div class="resource-grid">${beltDriveCluster.cards}</div></div>`;
+    document.querySelector('main')?.append(section);
+  }
+
   if (path === '/') {
     const latest = document.querySelector('.home-latest .resource-grid');
-    if (latest) latest.insertAdjacentHTML('afterbegin', '<a class="resource-card" href="/tool/heat-pump-operating-cost-calculator.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump Operating Cost</h3><p>Estimate electricity use and cost from a stated load and COP.</p></a><a class="resource-card" href="/blog/heat-pump-cop-and-operating-cost.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump COP and Cost</h3><p>Use point efficiency without confusing seasonal ratings.</p></a><a class="resource-card" href="/reference/heat-pump-efficiency-ratings-reference.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump Efficiency Ratings</h3><p>Reference COP, EER, SEER2, and HSPF2.</p></a>');
+    if (latest) latest.insertAdjacentHTML('afterbegin', '<a class="resource-card" href="/tool/fan-law-calculator.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Fan Law Calculator</h3><p>Estimate same-system CFM, pressure, and brake-power changes from RPM.</p></a><a class="resource-card" href="/tool/fan-pulley-rpm-calculator.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Fan Pulley RPM</h3><p>Calculate driven speed from motor RPM and sheave pitch diameters.</p></a><a class="resource-card" href="/blog/hvac-fan-belt-and-sheave-workflow.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Fan Belt and Sheave Workflow</h3><p>Connect speed ratio, belt geometry, and motor-load checks.</p></a><a class="resource-card" href="/tool/heat-pump-operating-cost-calculator.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump Operating Cost</h3><p>Estimate electricity use and cost from a stated load and COP.</p></a><a class="resource-card" href="/blog/heat-pump-cop-and-operating-cost.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump COP and Cost</h3><p>Use point efficiency without confusing seasonal ratings.</p></a><a class="resource-card" href="/reference/heat-pump-efficiency-ratings-reference.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump Efficiency Ratings</h3><p>Reference COP, EER, SEER2, and HSPF2.</p></a>');
     const section = document.createElement('section');
     section.className = 'section home-latest';
     section.innerHTML = '<div class="container"><div class="home-section-heading"><div><p class="eyebrow">Heat pump efficiency</p><h2>Load to operating cost</h2></div><p>Use a known thermal load and matched point COP to understand electricity use and a narrow cost scenario.</p></div><div class="resource-grid"><a class="resource-card" href="/tool/heat-pump-operating-cost-calculator.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump Operating Cost</h3><p>Estimate electricity use and cost from a stated load and COP.</p></a><a class="resource-card" href="/blog/heat-pump-cop-and-operating-cost.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump COP and Cost</h3><p>Understand the point-condition calculation and limits.</p></a><a class="resource-card" href="/reference/heat-pump-efficiency-ratings-reference.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump Efficiency Ratings</h3><p>Check COP, EER, SEER2, and HSPF2 use limits.</p></a></div></div>';
     document.querySelector('.home-cta')?.before(section);
+
+    const beltSection = document.createElement('section');
+    beltSection.className = 'section home-latest';
+    beltSection.innerHTML = '<div class="container"><div class="home-section-heading"><div><p class="eyebrow">Belt-drive fan service</p><h2>From sheave ratio to fan performance</h2></div><p>Check fan RPM, target driver size, belt geometry, and the power consequence of a speed change.</p></div><div class="resource-grid"><a class="resource-card" href="/tool/fan-pulley-rpm-calculator.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Fan Pulley RPM</h3><p>Verify theoretical driven fan speed.</p></a><a class="resource-card" href="/tool/motor-sheave-size-calculator.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Motor Sheave Size</h3><p>Screen a driver pitch diameter for target RPM.</p></a><a class="resource-card" href="/tool/v-belt-length-calculator.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>V-Belt Length</h3><p>Estimate pitch length and wrap angle.</p></a><a class="resource-card" href="/tool/fan-law-calculator.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Fan Law Calculator</h3><p>Predict airflow, pressure, and brake-power scaling.</p></a></div></div>';
+    document.querySelector('.home-cta')?.before(beltSection);
   }
 
   const existingLinks = {
     '/tool/hvac-load-calculator.html': ['/tool/heat-pump-operating-cost-calculator.html', 'Heat Pump Operating Cost Calculator'],
-    '/compare/btu-vs-kw.html': ['/reference/heat-pump-efficiency-ratings-reference.html', 'Heat Pump Efficiency Ratings Reference']
+    '/compare/btu-vs-kw.html': ['/reference/heat-pump-efficiency-ratings-reference.html', 'Heat Pump Efficiency Ratings Reference'],
+    '/tool/duct-velocity-calculator.html': ['/tool/fan-law-calculator.html', 'Fan Law Calculator'],
+    '/tool/cfm-calculator.html': ['/tool/fan-pulley-rpm-calculator.html', 'Fan Pulley RPM Calculator']
   };
   const related = existingLinks[path];
   if (related) {
@@ -94,4 +130,13 @@
     const list = heading?.nextElementSibling;
     if (list?.tagName === 'UL') list.insertAdjacentHTML('beforeend', `<li><a href="${related[0]}">${related[1]}</a></li>`);
   }
+
+  document.querySelectorAll('form[data-belt-drive]').forEach(form => {
+    form.addEventListener('input', () => {
+      if (form.checkValidity()) return;
+      form.querySelectorAll('[data-result]').forEach(result => { result.value = ''; });
+      const note = form.querySelector('[data-note]');
+      if (note) note.textContent = 'Enter positive values within the displayed input ranges.';
+    });
+  });
 })();
