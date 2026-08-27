@@ -47,9 +47,13 @@
   };
   const resultRows = form => resultBlocks(form).map(block => {
     const label = clean(block.querySelector('.psychro-results__label')?.textContent || block.querySelector(':scope > span')?.textContent || block.querySelector('span')?.textContent);
-    const output = block.querySelector('output, strong, [data-result]');
-    const value = clean(output?.value || output?.textContent);
-    const unit = clean(block.querySelector('[data-psychro-unit]')?.textContent || block.querySelector('small')?.textContent);
+    const outputs = [...block.querySelectorAll('[data-result], output')];
+    const fallback = block.querySelector('strong');
+    const value = outputs.length
+      ? outputs.map(output => clean(output.value || output.textContent)).filter(isMeaningful).join(' / ')
+      : clean(fallback?.textContent);
+    const units = [...block.querySelectorAll('[data-psychro-unit], small')].map(element => clean(element.textContent)).filter(isMeaningful);
+    const unit = [...new Set(units)].join(' / ');
     return { label, value, unit };
   }).filter(row => isMeaningful(row.label) && isMeaningful(row.value));
   const formTitle = form => clean(form.closest('.calculator-card')?.querySelector('h2')?.textContent || 'Calculator inputs');

@@ -80,6 +80,17 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
 - https://hvactoolshub.com/tool/fan-law-calculator.html
   - Estimates same-fan airflow, pressure, and brake-power changes from a documented RPM change.
 
+## Laboratory Fume Hood Tools
+
+- https://hvactoolshub.com/tool/fume-hood-face-velocity-calculator.html
+  - Calculates opening-average face velocity from measured exhaust airflow and documented sash geometry.
+- https://hvactoolshub.com/tool/fume-hood-traverse-calculator.html
+  - Summarizes equal-area face-velocity readings with average, minimum, maximum, range, and deviation.
+- https://hvactoolshub.com/tool/multi-fume-hood-exhaust-planner.html
+  - Compares fully connected exhaust with a user-defined active and standby multi-hood scenario.
+- https://hvactoolshub.com/tool/fume-hood-exhaust-load-calculator.html
+  - Estimates conditioned-exhaust thermal load from airflow, air density, moist-air enthalpy difference, and documented recovery.
+
 ## Guides
 
 - https://hvactoolshub.com/blog/what-is-btu.html
@@ -96,6 +107,8 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
   - Explains the inputs and sequence for a preliminary HVAC load review.
 - https://hvactoolshub.com/blog/hvac-fan-belt-and-sheave-workflow.html
   - Explains the measured sequence from drive-speed verification through belt geometry, fan laws, and final field checks.
+- https://hvactoolshub.com/blog/fume-hood-airflow-verification-workflow.html
+  - Connects fume hood field measurements, containment-test boundaries, multi-hood airflow scenarios, and conditioned-exhaust load.
 
 - https://hvactoolshub.com/blog/superheat-vs-subcooling-explained.html
   - Explains the separate matched saturation-temperature differences used for superheat and subcooling.
@@ -132,6 +145,8 @@ HVAC Tools Hub is a practical, tool-first reference site for HVAC capacity, airf
   - Defines straight-duct friction-rate inputs, units, formula, and limits.
 - https://hvactoolshub.com/reference/fan-belt-and-sheave-formulas.html
   - Provides fan-drive speed, sheave, belt-length, wrap-angle, belt-speed, and fan-law formulas with use limits.
+- https://hvactoolshub.com/reference/fume-hood-airflow-formulas.html
+  - Provides fume hood face, traverse, multi-hood scenario, and conditioned-exhaust formulas with record fields and use limits.
 
 - https://hvactoolshub.com/reference/refrigeration-units-reference.html
   - Provides capacity, mass-flow, enthalpy, and temperature-difference unit relationships for refrigeration checks.
