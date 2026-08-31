@@ -15,6 +15,11 @@
   resize: vertical;
 }
 
+/* Keep the single-line unit field independent from the adjacent traverse textarea. */
+.fume-hood-card form[data-fume-hood="traverse"] > .form-grid > .field {
+  align-self: start;
+}
+
 .fume-hood-card .form-group {
   margin-top: 1.25rem;
   padding: 1rem;
