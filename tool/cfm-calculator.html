@@ -1,3 +1,97 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><title>CFM Calculator from Room Volume and ACH | HVAC Tools Hub</title><meta name="description" content="Calculate a room volume-flow value in CFM from dimensions and a documented ACH target. Review what airflow stream the target represents."><link rel="canonical" href="https://hvactoolshub.com/tool/cfm-calculator.html"><link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml"><meta property="og:type" content="website"><meta property="og:title" content="CFM Calculator from Room Volume and ACH"><meta property="og:description" content="Calculate room CFM from dimensions and a documented ACH target."><meta property="og:url" content="https://hvactoolshub.com/tool/cfm-calculator.html"><meta property="og:site_name" content="HVAC Tools Hub"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/assets/css/style.css?v=20260720-mobilefix"><script async src="https://www.googletagmanager.com/gtag/js?id=G-EDV0PS9MP3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-EDV0PS9MP3');</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"CFM Calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","url":"https://hvactoolshub.com/tool/cfm-calculator.html","dateModified":"2026-07-20"}</script></head>
-<body><a class="skip-link" href="#main-content">Skip to main content</a><header class="site-header" data-site-header></header><main id="main-content" tabindex="-1"><nav class="breadcrumb" aria-label="Breadcrumb"><ol class="container"><li><a href="/">Home</a></li><li><a href="/tool/">Tools</a></li><li aria-current="page">CFM Calculator</li></ol></nav><section class="tool-intro"><div class="container"><p class="eyebrow">Airflow calculator</p><h1>CFM Calculator</h1><p class="tool-intro__lead">Calculate a volume-flow value in CFM from room dimensions and a documented air-changes-per-hour target.</p><p class="date-meta">Created <time datetime="2026-07-16">2026-07-16</time> &middot; Updated <time datetime="2026-07-20">2026-07-20</time></p></div></section><div class="container tool-layout"><section class="calculator-card"><div class="cluster-heading"><h2>Calculate CFM from volume and ACH</h2><p>Identify whether your target refers to supply, outdoor, exhaust, or recirculated airflow before using it.</p></div><form data-airflow="cfm"><div class="form-grid"><div class="field"><label for="cfm-length">Length <span class="unit">ft</span></label><input id="cfm-length" type="number" min="0.000001" step="any" value="20" required></div><div class="field"><label for="cfm-width">Width <span class="unit">ft</span></label><input id="cfm-width" type="number" min="0.000001" step="any" value="15" required></div><div class="field"><label for="cfm-height">Ceiling height <span class="unit">ft</span></label><input id="cfm-height" type="number" min="0.000001" step="any" value="8" required></div><div class="field"><label for="cfm-ach">Air changes per hour <span class="unit">ACH</span></label><input id="cfm-ach" type="number" min="0.000001" step="any" value="6" required></div></div><div class="form-actions"><button class="button button--primary">Calculate</button><button class="button button--secondary" type="reset">Reset</button></div><p data-note class="form-message" aria-live="polite"></p><div class="result-panel"><span>Volume-flow result</span><output data-output></output><small>CFM</small></div></form></section><aside class="tool-aside"><h2>At a glance</h2><dl><div><dt>Formula</dt><dd>Volume &times; ACH &divide; 60</dd></div><div><dt>Use</dt><dd>Volume-flow check</dd></div><div><dt>Not for</dt><dd>Code or equipment selection</dd></div></dl></aside></div><section class="section tool-content"><div class="container prose"><h2>How to use this calculator</h2><ol><li>Enter the inside length, width, and ceiling height of the space.</li><li>Enter an ACH value with a documented project, code, or engineering basis.</li><li>Read the implied airflow in cubic feet per minute.</li></ol><h2>Formula</h2><div class="formula">Room volume (ft&sup3;) = length &times; width &times; height<br>CFM = room volume (ft&sup3;) &times; ACH &divide; 60</div><h2>Variables and units</h2><div class="table-wrap"><table><thead><tr><th>Term</th><th>Meaning</th><th>Unit</th></tr></thead><tbody><tr><td>Room volume</td><td>Inside length &times; width &times; height</td><td>ft&sup3;</td></tr><tr><td>ACH</td><td>Volume changes per hour</td><td>1/h</td></tr><tr><td>CFM</td><td>Volume flow rate</td><td>ft&sup3;/min</td></tr></tbody></table></div><h2>Example</h2><p>A 20 ft &times; 15 ft &times; 8 ft room has 2,400 ft&sup3; of volume. At 6 ACH, 2,400 &times; 6 &divide; 60 = <strong>240 CFM</strong>.</p><h2>Result interpretation</h2><p>The calculation converts an ACH assumption into a volume flow. It does not determine that the ACH is appropriate, nor does it distinguish total supply, outdoor air, exhaust, return, or filtered recirculated air. Those streams can have different requirements and design purposes.</p><div class="callout"><h3>Continue with the air path</h3><p>After a documented airflow target is established, use the <a href="/tool/duct-size-calculator.html">Duct Size Calculator</a> to check an area/velocity relationship and the <a href="/tool/duct-velocity-calculator.html">Duct Velocity Calculator</a> for a separate velocity check.</p></div><h2>Frequently asked questions</h2><details><summary>Does this set a required ventilation rate?</summary><p>No. It only converts a chosen ACH to CFM. Use applicable requirements and qualified design for ventilation decisions.</p></details><details><summary>Does ACH mean all air is perfectly replaced?</summary><p>No. ACH is a volumetric rate. Actual mixing, distribution, short-circuiting, filtration, and contaminant removal depend on the system and space.</p></details><details><summary>Can I use this result to select HVAC equipment?</summary><p>No. Equipment selection needs a load calculation and manufacturer performance data. Airflow and capacity are related but are not interchangeable.</p></details><h2>Related resources</h2><ul><li><a href="/tool/air-changes-per-hour-calculator.html">Air Changes per Hour Calculator</a></li><li><a href="/blog/what-is-cfm-in-hvac.html">What Is CFM in HVAC?</a></li><li><a href="/blog/air-changes-per-hour-explained.html">Air Changes per Hour Explained</a></li><li><a href="/reference/hvac-airflow-reference-table.html">HVAC Airflow Reference Table</a></li></ul></div></section></main><footer class="site-footer" data-site-footer></footer><script src="/assets/js/site.js" defer></script><script src="/assets/js/airflow.js" defer></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="created_date" content="2026-07-16">
+  <meta name="updated_date" content="2026-09-07">
+  <meta name="robots" content="index,follow">
+  <title>CFM Calculator from Room Volume and ACH | HVAC Tools Hub</title>
+  <meta name="description" content="Calculate required CFM or m³/h from room dimensions or a known volume and a documented ACH target, with clear airflow-stream guidance.">
+  <link rel="canonical" href="https://hvactoolshub.com/tool/cfm-calculator.html">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CFM Calculator from Room Volume and ACH">
+  <meta property="og:description" content="Calculate room airflow from dimensions or known volume in US customary or SI units.">
+  <meta property="og:url" content="https://hvactoolshub.com/tool/cfm-calculator.html">
+  <meta property="og:site_name" content="HVAC Tools Hub">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260720-mobilefix">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDV0PS9MP3"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-EDV0PS9MP3');</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"CFM Calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","url":"https://hvactoolshub.com/tool/cfm-calculator.html","dateCreated":"2026-07-16","dateModified":"2026-09-07"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hvactoolshub.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://hvactoolshub.com/tool/"},{"@type":"ListItem","position":3,"name":"CFM Calculator","item":"https://hvactoolshub.com/tool/cfm-calculator.html"}]}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main-content" tabindex="-1">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol class="container"><li><a href="/">Home</a></li><li><a href="/tool/">Tools</a></li><li aria-current="page">CFM Calculator</li></ol></nav>
+    <section class="tool-intro"><div class="container">
+      <p class="eyebrow">Airflow calculator</p>
+      <h1>CFM Calculator</h1>
+      <p class="tool-intro__lead">Calculate required airflow from room dimensions or a known room volume and a documented air-changes-per-hour target.</p>
+      <p class="date-meta">Created <time datetime="2026-07-16">2026-07-16</time> &middot; Updated <time datetime="2026-09-07">2026-09-07</time></p>
+    </div></section>
+
+    <div class="container tool-layout">
+      <section class="calculator-card">
+        <div class="cluster-heading">
+          <h2>Calculate airflow from volume and ACH</h2>
+          <p>Use dimensions or enter a known volume. Identify whether the result represents supply, outdoor, exhaust, or another airflow stream.</p>
+        </div>
+        <form data-airflow="cfm" data-cfm-enhanced>
+          <div class="form-grid">
+            <div class="field"><label for="cfm-unit">Unit system</label><select id="cfm-unit" name="unit"><option value="us">US customary (ft, ft³, CFM)</option><option value="si">SI (m, m³, m³/h)</option></select></div>
+            <div class="field"><label for="cfm-room-input">Room input</label><select id="cfm-room-input" name="roomInput"><option value="dimensions">Room dimensions</option><option value="volume">Known room volume</option></select></div>
+          </div>
+          <div class="form-grid" data-room-dimensions>
+            <div class="field"><label for="cfm-length">Length <span class="unit" data-dimension-unit>ft</span></label><input id="cfm-length" name="roomLength" type="number" min="0.000001" max="10000" step="any" inputmode="decimal" value="20" required></div>
+            <div class="field"><label for="cfm-width">Width <span class="unit" data-dimension-unit>ft</span></label><input id="cfm-width" name="roomWidth" type="number" min="0.000001" max="10000" step="any" inputmode="decimal" value="15" required></div>
+            <div class="field"><label for="cfm-height">Ceiling height <span class="unit" data-dimension-unit>ft</span></label><input id="cfm-height" name="roomHeight" type="number" min="0.000001" max="10000" step="any" inputmode="decimal" value="8" required></div>
+          </div>
+          <div class="form-grid" data-room-volume hidden>
+            <div class="field"><label for="cfm-volume">Room volume <span class="unit" data-volume-unit>ft³</span></label><input id="cfm-volume" name="roomVolume" type="number" min="0.000001" max="1000000000000" step="any" inputmode="decimal" value="2400" required disabled></div>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label for="cfm-ach">Target air changes per hour <span class="unit">ACH</span></label><input id="cfm-ach" name="ach" type="number" min="0.000001" max="1000" step="any" inputmode="decimal" value="6" required></div>
+          </div>
+          <div class="form-actions"><button class="button button--primary" type="submit">Calculate</button><button class="button button--secondary" type="reset">Reset</button></div>
+          <p data-note class="form-message" aria-live="polite"></p>
+          <div class="result-panel"><span>Required airflow</span><output data-result="primary"></output><small data-primary-unit>CFM</small></div>
+          <div class="result-panel"><span>Room volume used</span><output data-result="volume"></output><small data-volume-unit>ft³</small></div>
+          <div class="result-panel"><span>Equivalent airflow</span><output data-result="secondary"></output><small data-secondary-unit>m³/h</small></div>
+        </form>
+      </section>
+      <aside class="tool-aside"><h2>At a glance</h2><dl><div><dt>Formula</dt><dd>Volume &times; ACH &divide; 60</dd></div><div><dt>Inputs</dt><dd>Dimensions or known volume</dd></div><div><dt>Boundary</dt><dd>Conversion, not a required ACH</dd></div></dl></aside>
+    </div>
+
+    <section class="section tool-content"><div class="container prose">
+      <h2>How to use this calculator</h2>
+      <ol><li>Select US customary or SI units.</li><li>Enter the inside room dimensions, or switch to Known room volume and enter the volume directly.</li><li>Enter an ACH value with a documented project, code, process, or engineering basis.</li><li>Read the required airflow, the volume used, and the equivalent airflow in the other unit system.</li></ol>
+      <h2>Formula</h2>
+      <div class="formula">Room volume (ft³) = length &times; width &times; height<br>CFM = room volume (ft³) &times; ACH &divide; 60<br>m³/h = room volume (m³) &times; ACH</div>
+      <h2>Variables and units</h2>
+      <div class="table-wrap"><table><thead><tr><th>Term</th><th>Meaning</th><th>US / SI unit</th></tr></thead><tbody><tr><td>Room volume</td><td>Inside dimensions multiplied together, or a directly entered known volume</td><td>ft³ / m³</td></tr><tr><td>ACH</td><td>Hourly airflow divided by the stated room volume</td><td>1/h</td></tr><tr><td>Airflow</td><td>The identified stream required to produce the entered nominal ACH</td><td>CFM / m³/h</td></tr></tbody></table></div>
+      <h2>Checked examples</h2>
+      <p>A 20 ft &times; 15 ft &times; 8 ft room has 2,400 ft³ of volume. At 6 ACH, 2,400 &times; 6 &divide; 60 = <strong>240 CFM</strong>, equivalent to about <strong>407.76 m³/h</strong>.</p>
+      <p>The same workflow in SI is direct: 67.96 m³ &times; 6 ACH = <strong>407.76 m³/h</strong>. Small differences after switching units come from displayed input rounding.</p>
+      <h2>Which airflow does the result represent?</h2>
+      <p>The arithmetic does not decide the air stream. A supply-air ACH uses measured or scheduled supply airflow; an outdoor-air ACH uses only the outdoor-air portion; an exhaust ACH uses exhaust flow; and a filtered-air or equivalent-ACH calculation needs the applicable clean-air method. Return airflow is not a universal substitute for any of these.</p>
+      <p>If supply and return differ, keep the values separate. The difference may be balanced by exhaust, transfer air, door undercuts, leakage, infiltration, or exfiltration and is part of a pressure/mass-balance question—not an extra ACH that should automatically be added to the room result.</p>
+      <h2>Result interpretation</h2>
+      <p>This tool converts a stated ACH basis into a volume flow. It does not determine whether the ACH is appropriate, prove uniform mixing or contaminant removal, establish outdoor-air compliance, balance a room, or select HVAC equipment.</p>
+      <div class="callout"><h3>Use the inverse tool for measured airflow</h3><p>If CFM is already measured or scheduled and the question is the resulting ACH, use the <a href="/tool/air-changes-per-hour-calculator.html">Air Changes per Hour Calculator</a>. For supply-versus-return interpretation, review <a href="/blog/air-changes-per-hour-explained.html">Air Changes per Hour Explained</a>.</p></div>
+      <h2>Frequently asked questions</h2>
+      <details><summary>Does this set a required ventilation rate?</summary><p>No. It converts a user-supplied ACH to airflow. Use the applicable standard, code, project criteria, and qualified design to establish requirements.</p></details>
+      <details><summary>Should I enter supply or return airflow for ACH?</summary><p>This calculator solves airflow from an ACH, so first label the ACH objective. Supply, outdoor, exhaust, return, and cleaned recirculated airflow describe different paths and should not be substituted without a documented method.</p></details>
+      <details><summary>Can I use this result to select HVAC equipment or duct size?</summary><p>No. Equipment selection requires load and manufacturer data. Duct design also requires velocity, fittings, pressure loss, noise, and available fan pressure.</p></details>
+      <h2>Related resources</h2>
+      <ul><li><a href="/tool/air-changes-per-hour-calculator.html">Air Changes per Hour Calculator</a></li><li><a href="/blog/how-to-calculate-cfm.html">How to Calculate CFM</a></li><li><a href="/blog/air-changes-per-hour-explained.html">Air Changes per Hour Explained</a></li><li><a href="/reference/hvac-airflow-reference-table.html">HVAC Airflow Reference Table</a></li><li><a href="/tool/duct-size-calculator.html">Duct Size Calculator</a></li></ul>
+      <section class="source-polish" data-source-polish><h2>Sources and scope</h2><p>The conversion is a volume-flow relationship. The cited sources distinguish supply, outdoor, return, exhaust, and clean-air purposes; they do not provide one universal ACH target for every room.</p><ul><li><a href="https://terminology.ashrae.org/?entry=supply+air">ASHRAE Terminology: supply air</a></li><li><a href="https://terminology.ashrae.org/?term=outdoor+air">ASHRAE Terminology: outdoor air and outdoor-air change rate</a></li><li><a href="https://www.cdc.gov/niosh/ventilation/faq/index.html">CDC/NIOSH Ventilation FAQs</a></li></ul></section>
+    </div></section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/airflow.js?v=20260907-cfm-workflow" defer></script>
+</body>
+</html>
