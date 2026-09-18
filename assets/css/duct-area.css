@@ -1,0 +1,48 @@
+.duct-area-card .cluster-heading {
+  display: grid;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+
+.duct-area-card .cluster-heading h2,
+.duct-area-card .cluster-heading p {
+  margin: 0;
+}
+
+.duct-area-card .cluster-heading p {
+  color: var(--muted);
+  font-size: .9375rem;
+}
+
+.duct-area-results {
+  display: grid;
+  gap: .75rem;
+  margin-top: 1.5rem;
+}
+
+.duct-area-results .result-panel {
+  min-width: 0;
+  margin-top: 0;
+}
+
+.duct-area-results output {
+  display: block;
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -.04em;
+  line-height: 1.2;
+}
+
+@media (min-width: 30rem) {
+  .duct-area-results {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .duct-area-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
