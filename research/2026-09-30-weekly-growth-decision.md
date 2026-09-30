@@ -80,7 +80,14 @@ Priority A closes this week's decision tree. Existing search candidates were not
 
 ## Deployment
 
-Implementation commit/push and actual production browser verification are the next closing step. This section will be updated with verified results before final completion is reported.
+- Implementation: `e1fb9b5b35186fc62a2f647cfcd779704fcd8d64`, pushed successfully to main. After push, local HEAD, fetched origin/main, and actual `git ls-remote` main all matched this SHA.
+- GitHub Pages production verification completed Sep 30. All four exact maintained URLs returned HTTP 200, the 2026-09-30 maintenance date, and the versioned Airflow asset. Production Airflow, shared loader, Tool polish, and Print CSS contents match repository contents after newline normalization.
+- Exact original reproduction now clears the output and displays the unsupported-result message instead of `∞ ACH`. All four production Tools passed normal fixtures, Reset, Copy with exact units, invalid output clearing, and invalid Copy/Print blocking.
+- Production responsive checks: four affected Tools × six viewport widths = 24 checks, plus healthy CFM and Home × six widths = 12 checks; **36 passed, zero document overflow or captured console warning/error**. There is one visible H1 and one H1 in initial static HTML. An invalid Print attempt builds a hidden print-only document with its own H1; that intentional heading is excluded from visible-screen H1 checks, not repaired as an unrelated SEO defect.
+- Production healthy CFM SI/IP round-trip preserved the independent fixtures. Production Home has the four current-date cards first, descending dates, valid links, and the existing KittyLaunch badge. No global layout redesign was made.
+- Representative HTTP and www URLs redirect to HTTPS apex with HTTP 200. A Googlebot-user-agent request returns 200, self-canonical, and no noindex. This is a representative response test, not proof of Google crawl scheduling or indexing.
+- Print limitation remains explicit: shared live Print document data was verified locally, invalid Print was verified locally and on production, and the real native Print entry point was exercised locally. Native printer/PDF rendering was not inspected. Unchanged production Print assets match the tested repository.
+- This research and the handover are closed in a follow-up documentation commit; the final Git SHA/ahead-behind/clean result is verified after its push and reported in the task response.
 
 ## Protected scope and next state
 
