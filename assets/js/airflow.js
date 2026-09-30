@@ -138,14 +138,21 @@
     };
     const calculate = () => {
       const values = inputs.map(input => Number(input.value));
-      if (values.some(value => !Number.isFinite(value) || value <= 0)) return fail('Enter values greater than zero.');
+      if (values.some(value => !Number.isFinite(value) || value <= 0)
+          || inputs.some(input => !input.checkValidity())) {
+        return fail('Enter values greater than zero and within the displayed input ranges.');
+      }
       let result;
       let unit = '';
       if (mode === 'cfm' || mode === 'airflow' || mode === 'room') {
-        result = values[0] * values[1] * values[2] * values[3] / 60;
+        const volume = values[0] * values[1] * values[2];
+        if (!Number.isFinite(volume) || volume <= 0) return fail('The entered values produce an unsupported result.');
+        result = volume * values[3] / 60;
         unit = 'CFM';
       } else if (mode === 'ach') {
-        result = values[3] * 60 / (values[0] * values[1] * values[2]);
+        const volume = values[0] * values[1] * values[2];
+        if (!Number.isFinite(volume) || volume <= 0) return fail('The entered values produce an unsupported result.');
+        result = values[3] * 60 / volume;
         unit = 'ACH';
       } else if (mode === 'per-square-foot') {
         result = values[1] / values[0];
@@ -159,6 +166,7 @@
       } else {
         return fail('Unsupported airflow calculation.');
       }
+      if (!Number.isFinite(result) || result <= 0) return fail('The entered values produce an unsupported result.');
       output.value = output.textContent = format(result);
       note.textContent = `Result: ${format(result)} ${unit}. Planning and conversion value only; verify design and code requirements.`;
     };
