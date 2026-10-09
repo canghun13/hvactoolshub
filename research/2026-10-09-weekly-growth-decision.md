@@ -102,7 +102,12 @@ Exclusions remain current: implemented BTU/airflow/duct/load/refrigeration/integ
 
 ## Deployment
 
-Code/static QA passed; authorized commit/push and exact public HTTP asset verification are next. Browser acceptance remains blocked. After push, actual `git ls-remote`, fetch/local SHA equality, ahead/behind and clean state must be checked. A closing record will distinguish delivered HTTP assets from unverified browser behavior.
+- Implementation commit: `ab7df122701b85cff40039cf28a73875e854961d`, pushed to `origin/main`. Actual `git ls-remote`, fetched `origin/main` and local HEAD all matched this SHA; ahead/behind 0/0, clean tree.
+- First post-push requests still encountered old assets/partially propagated HTML; not treated as a code regression or a deployment PASS. After a short wait, all five exact public Tool HTML files, Home, versioned Duct/site scripts, unchanged shared Tool polish and Print CSS returned **HTTP 200** and matched repository contents after newline normalization. Tool HTML has the correct canonical, maintenance date and versioned asset; no new sitemap/llms content needs deployment.
+- Public-asset test mode executed the fetched deployed script against all five deployed page definitions: **561 assertions passed**, including both original `1e308` cases clearing output. This is Node VM fixture execution, **not a real browser execution/render test**.
+- Representative HTTP and www Friction URLs resolve to the expected HTTPS apex URL with HTTP 200. A Googlebot-user-agent request returns 200, self-canonical and no noindex; this does not establish Google's actual crawl scheduling or indexing.
+- Closing research/handover commit follows these checks. Its final SHA/local-origin-actual equality and clean/ahead-behind status are reported after push in the task response; a commit cannot contain its own final SHA.
+- **Browser acceptance is still BLOCKED.** Pages delivery/public asset verification is confirmed; actual rendering, six viewports, browser console/overflow, native input validity, Copy/Print and native print layout remain unverified. Do not call end-to-end production QA complete.
 
 ## User browser checks still required
 
