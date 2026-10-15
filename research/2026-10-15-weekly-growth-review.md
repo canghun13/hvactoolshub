@@ -2,7 +2,7 @@
 
 ## Status and selected action
 
-**Production disposition: NO-GO / OBSERVE — no production change this week. Overall workflow remains BLOCKED, not completed.**
+**Final action: FIX — restore the missing CFM Guide section wrapper and close outstanding Duct browser acceptance.** The initial blocked review below is retained as history; the resumed verification and deployment closure are recorded at the end.
 
 The first action selected was to close the October 9 Duct deployment's outstanding browser acceptance before adding more unverified production work. Script/static/HTTP checks pass, but native browser access was stopped by URL-verification policy. This is not a new site defect, not a completed expansion discovery, and not a demand-based rejection of new clusters. No claim of 40 new families, finalist scores, or end-to-end production PASS is made.
 
@@ -73,7 +73,7 @@ No final opportunity scores or GO are assigned while required baseline browser a
 - Exclusion records reviewed: implemented BTU/Airflow/Duct/Load/Refrigeration/integrated Psychrometrics/Heat Pump/Belt/Fume Hood; recent ACH/CFM, Duct Area and Sheave upgrades; previous broad discovery families and NO-GO decisions remain excluded.
 - No 40-family discovery, 10–14 shortlist, deep finalists or new-cluster feasibility verdict is claimed. This is **a blocked review**, not a claim that sufficient new-family investigation found no opportunities. Small traffic alone was not used to reject expansion.
 
-## QA and current blocker
+## Initial QA and browser blocker (superseded by resumed verification below)
 
 - Existing local Duct regression: **561 assertions passed**, nine modes/five maintained pages. Existing Airflow regression: **85 passed**. These are Node VM tests, not native interaction tests.
 - Static checks: **108 HTML, 86 sitemap URLs, 1,099 local href/src targets, 14 JS syntax checks**, no missing targets or maintained title/description/canonical/H1/GA4/OG/JSON-LD errors detected by the existing audit. Sitemap XML parses; llms contains no URL outside sitemap; robots allows crawling and names the canonical sitemap. No new orphan/URL is introduced.
@@ -87,12 +87,36 @@ No final opportunity scores or GO are assigned while required baseline browser a
 - [EIA Btu explanation](https://www.eia.gov/energyexplained/units-and-calculators/british-thermal-units.php?lv=true) and [DOE room-air-conditioner purchasing context](https://www.energy.gov/cmei/femp/purchasing-energy-efficient-room-air-conditioners) for energy/capacity interpretation. No formula or standard value is changed.
 - [CaptiveAire Duct Velocity/CFM tool](https://toolbox.captiveaire.com/piping-structural/duct-velocity-cfm) and [BAPI airflow measurement reference](https://www.bapihvac.com/wp-content/uploads/2010/07/Determining-Air-Flow-in-CFM.pdf) for functional comparison and continuity-method context. No copied text, universal velocity, friction factor or compliance criterion.
 
-## Changes, deployment and protected scope
+## Initial documentation-only checkpoint
 
 Documentation only: this report and an appended handover record. **No production HTML, JS, CSS, generator, Home/Latest/category, internal-link, sitemap, llms, robots, title/canonical, contact-email or badge change. No new public URL.** Existing unrelated work is not touched. The documentation commit is pushed and final local/origin/actual SHA equality checked before reporting; this does not constitute a new application deployment or browser acceptance.
 
-## Exact next state
+## Initial next state (completed in the continuation below)
 
 1. Restore normal policy-compliant browser access so the current URL can be verified; do not bypass the browser safety check.
 2. Resume October 9's existing seven-URL acceptance list (five Duct Tools, healthy ACH, Home), including six widths, native validity, Calculate/Reset/Copy/Print and console. Inspect the CFM Guide's source-wrapper lead against a healthy Guide before deciding it is a defect.
 3. Then finalize the existing-growth decision or enter the required genuinely-new 40-family discovery. Do not re-read all reports or reimplement the already-passing numeric guards as a substitute for this missing step.
+
+## Resumed verification and final decision — October 15
+
+- Resumed clean `main` at `e1cbac8b706d0c9dddaaf2c8ad83b1a2806c8f38`; fetched origin and actual remote main matched, ahead/behind 0/0. The first sandboxed Git connection failed; the normal approved network execution succeeded. No credential replacement, token reuse, configuration reset, installation, or unrelated checkout modification.
+- The existing **Codex in-app browser** was available through its supported browser surface. This is a separate supported browser, not a bypass of the native Windows URL-verification stop. Chrome/user intervention was unnecessary. The earlier browser-unavailable conclusion was too broad.
+- Reproduced a real CFM Guide layout defect: at 1440 px the first body H2 started exactly at the Hero's bottom (0 px gap). Its article body was directly under `article`, missing `section.section`. The healthy ACH Guide has 56 px section spacing below 1024 and 80 px from 1024. This is the same structural error behind the earlier ACH repair, not a request for a new visual design.
+- Selected **FIX**, not an existing-growth/content expansion or a new cluster. Wrapped only this Guide's existing article body in the maintained section; retained its body, title, H1, description, canonical, links and formulas. Aligned visible/meta/Article modification dates to October 15 and supplied the existing July 16 creation date in metadata/schema. Added its dated Home Latest card through the existing loader and changed Home's loader cache version only.
+- No opportunity-score gate or 40-family discovery is claimed or required for the selected reproduced-defect branch. Prior exclusions remain exclusions, not evidence that no future expansion can work. No new/merged/deleted URL; current hub link and llms entry already include this Guide. Sitemap remains the actual 86-URL inventory; sitemap/llms/robots need no URL change.
+
+### Browser and regression evidence
+
+- Public Duct pages: Friction, Duct Size, Rectangular Size, Equivalent Diameter and Velocity; six live forms, including both Velocity forms. Actual Calculate fixtures returned 0.03 in. w.g. with fractional density/factor, 13.54 in for 1000 CFM/1000 FPM, 18 × 8 in at a 2.25 rectangle ratio, 12.86 in equivalent for 18 × 8, and 561.26/600 FPM for the round/rectangular examples. Fractional ratio/density/factor did not produce native step errors. No calculator source change was needed.
+- Empty, zero, negative and below-minimum values cleared stale output across all six forms. Original Friction/Equivalent overflow reproductions cleared instead of displaying infinity. Reset restored default calculations; Copy produced labeled unit-bearing results (including confirmed clipboard 600 FPM and healthy ACH 6 ACH). Invalid Copy blocked. Invalid Print blocked on a single-form page or when all Velocity forms were invalid. Print deliberately includes all forms on multi-form pages; a different valid form can keep page printing available. Very large but finite geometry is not a physical design approval or a claimed realism-bound test.
+- Five Duct URLs plus public ACH and Home: **42 real viewport checks**, at 390/768/900/1024/1280/1440, correct measured viewport widths, one visible H1, loaded Header/Footer, no document overflow. Screenshots saved for each; representative full-page desktop/mobile views inspected. The first exploratory viewport loop targeted the other open tab; those measurements were discarded and the matrix rerun using a single tab. Public ACH Calculate/Copy/Reset and overflow clearing also passed. Duct fixture and healthy-page console logs captured no page warnings/errors.
+- Local CFM fix: six widths, body 343 px at 390 and 768 px maximum from 900 upward; section gaps 56/80 px match the healthy ACH Guide exactly. At 390, its 640 px table scrolls inside a 343 px wrapper without document overflow. No console warnings/errors. Home's six-width checks show the October 15 Guide above October 9 Duct entries. Mobile navigation reached Contact and returned to Tools via the existing scrollable navigation.
+- Local live Print summaries used the pre-existing **local-only** print hook, not production injection: Friction 5 inputs/1 result, Size 2/1, Rectangle 3/1, Equivalent 2/1, Velocity 2/1 + 3/1; labels, values and units present; no form controls inside the printable summary. A valid production Print action opened a blocking native dialog, which was closed by closing that temporary tab. Native printer/PDF pagination was **not visually inspected**; unchanged shared Print code/styles and working summary construction are verified. Do not misreport the hook as printer/PDF rendering.
+- Local automated tests: 561 Duct assertions + 85 Airflow assertions passed. Static audit: 108 HTML, 86 sitemap URLs, 1,099 local targets, 14 JS syntax checks, zero detected target/metadata/JSON-LD issues. `git diff --check` passed.
+- Browser artifacts and structured results are kept outside the public repository in the task's local QA folder. No reports, screenshots, temporary print instrumentation or new runtime dependencies are shipped.
+
+### Scope and final closure
+
+- Production changes: `blog/what-is-cfm-in-hvac.html`, `assets/js/site.js`, Home loader query only. Documentation: this record and handover. No global CSS, calculator logic, Header/Footer, badges, contact address, existing URL or other-project work changed. Exact Home comparison confirmed that only its loader version differs; all badge markup is unchanged.
+- Implementation commit/push and public verification are recorded in the closing handover entry after deployment. The final response reports the separately verified final SHA; do not embed a commit's own future SHA in itself.
+- Next review: (1) use fresh identified-source/matching-period query/page exports, (2) distinguish new organic signals from this QA traffic, (3) select the next strong existing workflow or genuinely new discovery branch. No speculative indexing rewrite or forced cluster creation.

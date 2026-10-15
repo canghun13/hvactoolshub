@@ -157,6 +157,10 @@
     if (latest) latest.insertAdjacentHTML('afterbegin', '<a class="resource-card" href="/tool/duct-friction-loss-calculator.html" data-updated-date="2026-10-09"><span>2026-10-09</span><h3>Duct Friction Loss</h3><p>Check stated straight-run pressure loss with validated inputs.</p></a><a class="resource-card" href="/tool/duct-size-calculator.html" data-updated-date="2026-10-09"><span>2026-10-09</span><h3>Duct Size Calculator</h3><p>Calculate preliminary round dimensions from airflow and velocity.</p></a><a class="resource-card" href="/tool/rectangular-duct-size-calculator.html" data-updated-date="2026-10-09"><span>2026-10-09</span><h3>Rectangular Duct Size</h3><p>Check width and height from a stated aspect ratio.</p></a><a class="resource-card" href="/tool/equivalent-duct-diameter-calculator.html" data-updated-date="2026-10-09"><span>2026-10-09</span><h3>Equivalent Duct Diameter</h3><p>Calculate an equal-friction approximation with finite-result checks.</p></a><a class="resource-card" href="/tool/duct-velocity-calculator.html" data-updated-date="2026-10-09"><span>2026-10-09</span><h3>Duct Velocity</h3><p>Check round and rectangular duct velocity from actual dimensions.</p></a>');
   }
 
+  // Keep the maintained CFM Guide update above older Home Latest entries.
+  const latestUpdates = document.querySelector('.home-page .home-latest .resource-grid');
+  if (latestUpdates) latestUpdates.insertAdjacentHTML('afterbegin', '<a class="resource-card" href="/blog/what-is-cfm-in-hvac.html" data-updated-date="2026-10-15"><span>2026-10-15</span><h3>What Is CFM in HVAC?</h3><p>Read the airflow definition, room-volume example, and measurement limits.</p></a>');
+
   const existingLinks = {
     '/tool/hvac-load-calculator.html': ['/tool/heat-pump-operating-cost-calculator.html', 'Heat Pump Operating Cost Calculator'],
     '/compare/btu-vs-kw.html': ['/reference/heat-pump-efficiency-ratings-reference.html', 'Heat Pump Efficiency Ratings Reference'],
