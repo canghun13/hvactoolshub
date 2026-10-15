@@ -22,11 +22,18 @@
   .tool-content{display:block!important;padding:0!important;break-before:page}
   .tool-content .prose{display:block!important}
   .prose h2,.prose h3{color:#000!important;break-after:avoid-page}
+  /* Screen-only FAQ disclosures must not leave an empty heading in print. */
+  .prose h2:has(+details),.prose h3:has(+details){display:none!important}
+  /* Printed lists use normal block flow, not the screen card's fragmented grid. */
+  .prose>ol,.prose>ul{display:block!important;padding:.5rem 0 .5rem 1.5rem!important;border:0!important;border-radius:0!important;background:transparent!important;break-before:avoid-page;break-inside:avoid-page}
+  .prose>ol>li,.prose>ul>li{margin-bottom:.35rem;break-inside:avoid}
+  .prose h2,.prose h3{page-break-after:avoid;break-after:avoid}
   .prose p,.prose li,.prose td,.prose th{color:#000!important}
   .prose .formula,.prose .callout{break-inside:avoid;border-color:#000!important;background:#f4f4f4!important;color:#000!important}
   .prose .table-wrap{overflow:visible!important}
   .prose table{font-size:9pt!important}
   .prose tr{break-inside:avoid}
   .prose details{display:none!important}
+  .prose [data-source-polish]{break-inside:avoid-page}
   a{color:#000!important;text-decoration:underline!important}
 }
