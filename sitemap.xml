@@ -4,18 +4,21 @@
 
 <url>
 <loc>https://hvactoolshub.com/</loc>
+<lastmod>2026-10-22</lastmod>
 </url>
 
 <url>
 <loc>https://hvactoolshub.com/tool/</loc>
+<lastmod>2026-10-22</lastmod>
 </url>
 
 <url>
 <loc>https://hvactoolshub.com/blog/</loc>
+<lastmod>2026-10-22</lastmod>
 </url>
 
-<url><loc>https://hvactoolshub.com/reference/</loc></url>
-<url><loc>https://hvactoolshub.com/compare/</loc></url>
+<url><loc>https://hvactoolshub.com/reference/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://hvactoolshub.com/compare/</loc><lastmod>2026-10-22</lastmod></url>
 
 <url>
 <loc>https://hvactoolshub.com/tool/btu-calculator.html</loc>

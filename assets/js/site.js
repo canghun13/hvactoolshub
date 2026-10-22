@@ -1,5 +1,6 @@
 (() => {
   const addStyle = href => {
+    if (document.querySelector(`link[rel="stylesheet"][href="${href}"]`)) return;
     const element = document.createElement('link');
     element.rel = 'stylesheet';
     element.href = href;
@@ -12,6 +13,9 @@
     document.head.append(element);
   };
   const path = location.pathname.replace(/index\.html$/, '');
+  // Entry pages expose their existing navigation and directory cards in HTML.
+  // Keep the fallback for older cached pages, without inserting duplicate cards.
+  const staticDiscovery = Boolean(document.querySelector('main[data-static-discovery]'));
   const folders = { tool: ['Tools', '/tool/'], blog: ['Guides', '/blog/'], compare: ['Compare', '/compare/'], reference: ['Reference', '/reference/'] };
   const kind = Object.keys(folders).find(key => path.startsWith(`/${key}/`));
 
@@ -58,8 +62,8 @@
   const makeLinks = items => items.map(([text, href]) => `<a href="${href}"${path === href ? ' aria-current="page"' : ''}>${text}</a>`).join('');
   const header = document.querySelector('[data-site-header]');
   const footer = document.querySelector('[data-site-footer]');
-  if (header) header.innerHTML = `<div class="container header-inner"><a class="brand" href="/" aria-label="HVAC Tools Hub home">HVAC Tools Hub</a><nav class="site-nav" aria-label="Primary navigation">${makeLinks(links)}</nav></div>`;
-  if (footer) footer.innerHTML = `<div class="container footer-inner"><div><p class="footer-brand">HVAC Tools Hub</p><p class="footer-copy">Practical HVAC engineering resources.</p></div><nav class="footer-nav" aria-label="Footer navigation">${makeLinks(footerLinks)}</nav><p class="footer-copy">&copy; ${new Date().getFullYear()} HVAC Tools Hub</p></div>`;
+  if (header && !header.children.length) header.innerHTML = `<div class="container header-inner"><a class="brand" href="/" aria-label="HVAC Tools Hub home">HVAC Tools Hub</a><nav class="site-nav" aria-label="Primary navigation">${makeLinks(links)}</nav></div>`;
+  if (footer && !footer.children.length) footer.innerHTML = `<div class="container footer-inner"><div><p class="footer-brand">HVAC Tools Hub</p><p class="footer-copy">Practical HVAC engineering resources.</p></div><nav class="footer-nav" aria-label="Footer navigation">${makeLinks(footerLinks)}</nav><p class="footer-copy">&copy; ${new Date().getFullYear()} HVAC Tools Hub</p></div>`;
 
   const clusterCards = {
     '/tool/': { eyebrow: 'Heat pump efficiency', title: 'Operating-cost scenarios', description: 'Translate a documented thermal load and matched COP into electricity use and cost.', card: '<a class="resource-card" href="/tool/heat-pump-operating-cost-calculator.html"><span>HEAT PUMP</span><h3>Heat Pump Operating Cost</h3><p>Estimate electricity use, cost, and heating comparison from stated inputs.</p></a>' },
@@ -67,7 +71,7 @@
     '/reference/': { eyebrow: 'Heat pump efficiency', title: 'Efficiency rating context', description: 'Check which metric belongs to a point condition and which belongs to seasonal equipment comparison.', card: '<a class="resource-card" href="/reference/heat-pump-efficiency-ratings-reference.html"><span>HEAT PUMP</span><h3>Heat Pump Efficiency Ratings</h3><p>Reference COP, EER, SEER2, and HSPF2 definitions and use limits.</p></a>' }
   };
   const cluster = clusterCards[path];
-  if (cluster) {
+  if (cluster && !staticDiscovery) {
     const section = document.createElement('section');
     section.className = 'section';
     section.dataset.heatPumpCluster = '';
@@ -96,7 +100,7 @@
     }
   };
   const beltDriveCluster = beltDriveClusters[path];
-  if (beltDriveCluster) {
+  if (beltDriveCluster && !staticDiscovery) {
     const section = document.createElement('section');
     section.className = 'section';
     section.dataset.beltDriveCluster = '';
@@ -125,7 +129,7 @@
     }
   };
   const fumeHoodCluster = fumeHoodClusters[path];
-  if (fumeHoodCluster) {
+  if (fumeHoodCluster && !staticDiscovery) {
     const section = document.createElement('section');
     section.className = 'section';
     section.dataset.fumeHoodCluster = '';
@@ -133,7 +137,7 @@
     document.querySelector('main')?.append(section);
   }
 
-  if (path === '/') {
+  if (path === '/' && !staticDiscovery) {
     const latest = document.querySelector('.home-latest .resource-grid');
     if (latest) latest.insertAdjacentHTML('afterbegin', '<a class="resource-card" href="/tool/fan-law-calculator.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Fan Law Calculator</h3><p>Estimate same-system CFM, pressure, and brake-power changes from RPM.</p></a><a class="resource-card" href="/tool/fan-pulley-rpm-calculator.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Fan Pulley RPM</h3><p>Calculate driven speed from motor RPM and sheave pitch diameters.</p></a><a class="resource-card" href="/blog/hvac-fan-belt-and-sheave-workflow.html" data-updated-date="2026-08-24"><span>2026-08-24</span><h3>Fan Belt and Sheave Workflow</h3><p>Connect speed ratio, belt geometry, and motor-load checks.</p></a><a class="resource-card" href="/tool/heat-pump-operating-cost-calculator.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump Operating Cost</h3><p>Estimate electricity use and cost from a stated load and COP.</p></a><a class="resource-card" href="/blog/heat-pump-cop-and-operating-cost.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump COP and Cost</h3><p>Use point efficiency without confusing seasonal ratings.</p></a><a class="resource-card" href="/reference/heat-pump-efficiency-ratings-reference.html" data-updated-date="2026-08-08"><span>2026-08-08</span><h3>Heat Pump Efficiency Ratings</h3><p>Reference COP, EER, SEER2, and HSPF2.</p></a>');
     const section = document.createElement('section');
@@ -158,7 +162,7 @@
   }
 
   // Keep maintained October 15 corrections above older Home Latest entries.
-  const latestUpdates = document.querySelector('.home-page .home-latest .resource-grid');
+  const latestUpdates = !staticDiscovery && document.querySelector('.home-page .home-latest .resource-grid');
   if (latestUpdates) latestUpdates.insertAdjacentHTML('afterbegin', '<a class="resource-card" href="/tool/equivalent-duct-diameter-calculator.html" data-updated-date="2026-10-15"><span>2026-10-15</span><h3>Equivalent Duct Diameter</h3><p>Check the equal-friction result with aligned worked examples.</p></a><a class="resource-card" href="/reference/equivalent-round-duct-diameter-table.html" data-updated-date="2026-10-15"><span>2026-10-15</span><h3>Equivalent Round Diameter Table</h3><p>Look up formula-checked rectangular-to-round example values.</p></a><a class="resource-card" href="/blog/what-is-cfm-in-hvac.html" data-updated-date="2026-10-15"><span>2026-10-15</span><h3>What Is CFM in HVAC?</h3><p>Read the airflow definition, room-volume example, and measurement limits.</p></a>');
 
   const existingLinks = {
