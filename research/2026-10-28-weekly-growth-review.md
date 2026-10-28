@@ -108,7 +108,11 @@ No speculative growth scores assigned after a hard defect is reproduced.
 
 ## Deployment
 
-Implementation pending the push and production checks at this initial record. Do not treat this section as deployment acceptance until the closure is appended.
+- Implementation `09168395b10ad6e54e321cd00a040cad03ee8262` pushed to main. [GitHub Pages run 40648527708](https://github.com/canghun13/hvactoolshub/actions/runs/40648527708) completed successfully at 07:13:16 UTC October 28. The initial in-progress response was not counted as deployment acceptance.
+- After success, all nine focused public resources return HTTP 200 and match committed source after newline normalization: five changed Tool HTML pages, Home, sitemap, and the two versioned BTU scripts. All six checked page canonicals are correct. No repeat sitewide host/index audit inferred from unchanged Coverage counts.
+- Actual production browser: all five Tools pass their normal/fractional calculation, Reset and actual clipboard readback. Blank, zero, negative, below-minimum and nonfinite values clear previous results; core ton overflow and Tons/area-ratio/room overflow clear primary and secondary outputs. Invalid Print actions show the valid-result instruction without launching Print. Local complete Print-summary checks and unchanged shared Print assets remain the scope of valid-print acceptance, not a new production PDF-pagination claim.
+- Production responsive acceptance: all **42** combinations (five changed Tools, healthy ACH, Home; 390/768/900/1024/1280/1440) pass explicitly requested=actual width, one H1/primary nav, header/H1 separation, control bounds and no document overflow. Core desktop/mobile and Tons mobile screenshots inspected; no captured warning/error. Public Home Latest starts with the five October 28 BTU cards. Temporary browser viewports/tabs and local QA server cleaned up.
+- Deployment of this FIX is complete. Google indexing recovery remains **unverified**, not failed or recovered by inference: the current report contains no post-repair crawl timestamps for the 43 reported Crawled exclusions and no current indexed-total export. No authenticated URL Inspection, recrawl request or manual-action result is claimed. Final clean local/fetched/actual remote equality is checked after the documentation closure push.
 
 ## Protected areas
 
