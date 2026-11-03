@@ -5,6 +5,7 @@
     if (output) output.value = Number.isFinite(value) ? format(value, digits) : '';
   };
   const clear = form => form.querySelectorAll('[data-result]').forEach(output => { output.value = ''; });
+  const validInputs = form => [...form.querySelectorAll('input,select')].every(input => input.checkValidity());
   const number = (form, name) => Number(form.elements[name]?.value);
   const bind = (form, calculate) => {
     form.addEventListener('submit', event => { event.preventDefault(); calculate(); });
@@ -31,16 +32,22 @@
         const mass = number(form, 'massFlow');
         const deltaH = number(form, 'enthalpyDelta');
         const si = form.elements.unit.value === 'si';
-        if (!Number.isFinite(mass) || !Number.isFinite(deltaH) || mass <= 0 || deltaH <= 0) {
+        if (!validInputs(form) || !Number.isFinite(mass) || !Number.isFinite(deltaH) || mass <= 0 || deltaH <= 0) {
           clear(form);
-          message.textContent = 'Enter positive mass-flow and enthalpy-difference values.';
+          message.textContent = 'Enter positive mass-flow and enthalpy-difference values within the displayed input ranges.';
           return;
         }
         const kw = si ? mass * deltaH : mass * deltaH * 60 * 0.2930710702 / 1000;
         const btu = kw * 3412.141633;
+        const tons = btu / 12000;
+        if (![kw, btu, tons].every(value => Number.isFinite(value) && value > 0)) {
+          clear(form);
+          message.textContent = 'These values are outside the supported calculation range. Adjust the inputs.';
+          return;
+        }
         set(form, 'btu', btu, 0);
         set(form, 'kw', kw, 3);
-        set(form, 'tons', btu / 12000, 3);
+        set(form, 'tons', tons, 3);
         message.textContent = 'Result is the refrigerant-side heat-transfer rate for the stated measurements.';
       };
       bind(form, calculate);
@@ -51,7 +58,9 @@
       const line = number(form, 'lineTemperature');
       const saturation = number(form, 'saturationTemperature');
       const si = form.elements.unit.value === 'si';
-      if (!Number.isFinite(line) || !Number.isFinite(saturation) || line < -100 || line > 300 || saturation < -100 || saturation > 300) {
+      const differenceUnit = form.querySelector('[data-difference-unit]');
+      if (differenceUnit) differenceUnit.textContent = si ? '°C difference' : '°F difference';
+      if (!validInputs(form) || !Number.isFinite(line) || !Number.isFinite(saturation) || line < -100 || line > 300 || saturation < -100 || saturation > 300) {
         clear(form);
         message.textContent = si ? 'Enter temperatures from -100 to 300 °C.' : 'Enter temperatures from -100 to 300 °F.';
         return;
