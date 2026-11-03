@@ -100,7 +100,11 @@ Priority A takes precedence; no speculative scores or existing-upgrade GO claime
 
 ## Deployment
 
-Initial record: implementation/public acceptance pending push. Do not treat local checks as production acceptance. Append verified implementation SHA, Pages result and actual public tests after deployment; final documentation SHA is reported only after clean local/fetched/actual remote equality.
+- Implementation `e80e8579110ddbcdd933119a6c98d6c150b9da05` pushed. [GitHub Pages run 41589149965](https://github.com/canghun13/hvactoolshub/actions/runs/41589149965) completed successfully November 3 at 06:20:05 UTC. An in-progress status was not counted as acceptance.
+- All six focused public resources return HTTP 200 and match source after newline normalization: three Tool HTML pages, Home, sitemap and cache-versioned refrigeration.js. All four page canonicals are correct. This is focused deployment verification, not a repeated whole-site index audit.
+- Actual public browser: all three Tools pass default and SI calculations, Calculate/Reset and actual clipboard readback in both systems. Twenty-eight blank/nonfinite/native-boundary cases clear every result; invalid Copy and Print return valid-result instructions. Zero temperatures/equal readings remain valid; signed Subcooling SI −10/−10 K retains its review warning. Exact selected °F/°C labels appear in copied results. Local valid Print-summary checks remain separate from native PDF pagination; shared Print assets are unchanged.
+- All **30** production responsive combinations pass at actual 390/768/900/1024/1280/1440 widths, three changed Tools + healthy BTU + Home: one H1/navigation, no header overlap, off-screen control or document overflow. Public mobile result-card and desktop screenshots inspected; no captured warning/error. Mobile primary navigation reaches Contact normally. Home Latest starts with the three actual November 3 changes before October 28 updates.
+- Task-created browser tab/viewport and local QA server cleaned up. No follow-up production correction needed. Final documentation push is verified by local HEAD = fetched origin/main = actual remote main, 0/0 and clean tree, and its SHA is reported in the completion response. The application FIX is complete; Google indexing recovery remains unverified because current Coverage status is not newer than October 23. No authenticated GSC/recrawl/manual-action result is claimed.
 
 ## Protected areas
 
