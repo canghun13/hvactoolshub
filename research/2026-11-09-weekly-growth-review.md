@@ -92,7 +92,12 @@ No fabricated candidate scores. Expansion considered at decision-tree level, dis
 
 ## Deployment
 
-Implementation push and actual public acceptance will be appended after verification. Do not read this pre-deployment section as completion.
+- Implementation `82d72ffca71cd5ec15d72b99c4e584545dad9ca0` pushed to main. [Pages run 42583871875](https://github.com/canghun13/hvactoolshub/actions/runs/42583871875) completed successfully November 9 at 08:09:42 UTC. An earlier in-progress state was not treated as acceptance.
+- Four public resources return HTTP 200 and match committed source after newline/BOM normalization: Load Tool HTML, versioned load.js, Home, sitemap. Home and Load canonicals exactly match their intended public URLs.
+- Actual public browser verifies US 3,971.8 / 3,160 BTU/h / 183.9 CFM, SI 1,144.2 / 1,144.2 / 58.9, actual clipboard readback, Reset-empty state, fractional 123.5 W submission and infinity-result clearing. Twenty-six native upper-bound/required-blank cases across IP/SI clear all outputs with guidance. Invalid Copy/Print remain blocked. Valid native Print-summary acceptance was local as documented above; no public PDF-pagination claim.
+- Production responsive Load + healthy Refrigeration Capacity + Home: 18 actual-width checks at 390/768/900/1024/1280/1440, no off-screen controls/document overflow, screenshots inspected and no captured console warning/error. Load's hidden generated print-document H1 is not a second visible page heading; a fresh page verifies one visible H1 at every width. Primary navigation at 390 reaches Contact correctly. Public Home Latest begins with the November 9 Load card before November 3 updates.
+- No follow-up application patch needed. QA viewport reset, working QA tab closed, task server stopped; no security configuration changed. The failed earlier temporary localhost tab was an internal network-error page, not a production TLS/security failure, and was not bypassed.
+- Final documentation push is checked separately by local HEAD = fetched origin/main = actual remote main, 0/0 and clean tree; completion SHA is reported in the final response. The scoped application FIX/deployment is complete. Google indexing recovery remains unverified for the evidence reasons above.
 
 ## Protected areas and next state
 
