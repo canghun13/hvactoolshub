@@ -19,6 +19,9 @@
     clear(form);
     message(form, '');
     const kind = form.dataset.beltDrive;
+    if (!form.checkValidity()) return message(form, 'Enter positive values within the displayed input ranges.');
+    const units = kind === 'fan-law' ? ['us', 'si'] : ['in', 'mm'];
+    if (!units.includes(form.elements.unit.value)) return message(form, 'Select a supported unit system.');
 
     if (kind === 'fan-rpm') {
       const motorRpm = number(form, 'motorRpm');
@@ -101,9 +104,10 @@
   document.querySelectorAll('form[data-belt-drive]').forEach(form => {
     form.addEventListener('submit', event => { event.preventDefault(); calculate(form); });
     form.addEventListener('input', () => {
-      if (form.checkValidity()) return;
       clear(form);
-      message(form, 'Enter positive values within the displayed input ranges.');
+      message(form, form.checkValidity()
+        ? 'Inputs changed. Calculate again to update the results.'
+        : 'Enter positive values within the displayed input ranges.');
     });
     form.addEventListener('reset', () => window.setTimeout(() => { clear(form); message(form, 'Enter values and calculate.'); }, 0));
     form.querySelectorAll('select').forEach(select => select.addEventListener('change', () => calculate(form)));
