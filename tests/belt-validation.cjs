@@ -62,4 +62,16 @@ belt.input('centerDistance',2);belt.calculate();ok(belt.empty(),'infeasible open
 const fan=fixture(files[3]);eq(fan.result('airflow2'),5500,'10% speed airflow');eq(fan.result('pressure2'),1.815,'square pressure');eq(fan.result('power2'),6.655,'cube brake power');eq(fan.result('powerChange'),33.1,'power percent');
 fan.unit('si');for(const[k,v]of Object.entries({airflow1:1000,pressure1:100,power1:2}))fan.input(k,v);fan.calculate();eq(fan.result('airflow2'),1100,'SI airflow scaling');eq(fan.result('pressure2'),121,'SI pressure scaling');eq(fan.result('power2'),2.662,'SI power scaling');eq(fan.outputs.power2.nextElementSibling.textContent,'kW','SI power label');
 fan.reset();fan.input('rpm2',640);fan.calculate();eq(fan.result('speedChange'),-20,'speed reduction allowed');eq(fan.result('powerChange'),-48.8,'signed power change allowed');
+const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const latest=home.match(/<section class="section home-latest" aria-labelledby="latest-title">[\s\S]*?<\/section>/)[0];
+for(const file of files){
+  const html=fs.readFileSync(path.join(root,'tool',file+'.html'),'utf8');
+  const date=html.match(/name="updated_date" content="([^"]+)"/)[1];
+  const entry=[...sitemap.matchAll(/<url>[\s\S]*?<\/url>/g)].map(m=>m[0]).find(s=>s.includes('/tool/'+file+'.html</loc>'));
+  eq(entry?.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1],date,'sitemap follows maintained Tool update '+file);
+  eq([...latest.matchAll(/<a\b[^>]*href="([^"]+)"/g)].filter(m=>m[1]==='/tool/'+file+'.html').length,1,'one current Latest entry '+file);
+}
+const homeEntry=[...sitemap.matchAll(/<url>[\s\S]*?<\/url>/g)].map(m=>m[0]).find(s=>s.includes('<loc>https://hvactoolshub.com/</loc>'));
+eq(homeEntry?.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1],home.match(/name="updated_date" content="([^"]+)"/)[1],'Home sitemap date');
 console.log('PASS: '+checks+' Belt validation, stale-result and formula assertions across four Tools.');
